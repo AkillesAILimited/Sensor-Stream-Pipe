@@ -1,8 +1,11 @@
-//
+/**
+ * \file iphone_reader.mm iPhone driver
+ */
 // Created by David Geldreich on 1-06-2021.
-//
 
 #include "iphone_reader.h"
+
+using namespace moetsi::ssp;
 
 #include <opencv2/imgproc.hpp>
 
@@ -66,6 +69,8 @@ using namespace std;
 }
 @end
 
+namespace moetsi::ssp {
+
 class iPhoneReaderImpl
 {
 public:
@@ -84,32 +89,32 @@ iPhoneReader::iPhoneReader()
   frame_template_.frame_id = 0;
   frame_template_.device_id = 0;
   
-  frame_template_.message_type = 0;
+  frame_template_.message_type = SSPMessageType::MessageTypeDefault; // 0
   
-  frame_template_.frame_data_type = 0;
+  frame_template_.frame_data_type = FrameDataType::FrameDataTypeImageType; // 0
   frame_template_.scene_desc = "iphone";
   frame_template_.stream_id = RandomString(16);
   
   pImpl->image = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->image->sensor_id = 0;
-  pImpl->image->frame_type = 0;      // image
-  pImpl->image->frame_data_type = 6; // YUV
-  pImpl->image->timestamps.push_back(CurrentTimeMs());
-  pImpl->image->timestamps.push_back(CurrentTimeMs());
+  pImpl->image->sensor_type = SensorType::SensorTypeColor; // 0
+  pImpl->image->frame_type = FrameType::FrameTypeColor;      // 0 image
+  pImpl->image->frame_data_type = FrameDataType::FrameDataTypeYUV; // 6 YUV
+  pImpl->image->timestamps.push_back(CurrentTimeNs());
+  pImpl->image->timestamps.push_back(CurrentTimeNs());
 
   pImpl->depth = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->depth->sensor_id = 1;
-  pImpl->depth->frame_type = 1;      // depth
-  pImpl->depth->frame_data_type = 5; // float
-  pImpl->depth->timestamps.push_back(CurrentTimeMs());
-  pImpl->depth->timestamps.push_back(CurrentTimeMs());
+  pImpl->depth->sensor_type = SensorType::SensorTypeDepth; // 1
+  pImpl->depth->frame_type = FrameType::FrameTypeDepth;      // 1 depth
+  pImpl->depth->frame_data_type = FrameDataType::FrameDataTypeRaw32FC1; // 5 float
+  pImpl->depth->timestamps.push_back(CurrentTimeNs());
+  pImpl->depth->timestamps.push_back(CurrentTimeNs());
   
   pImpl->confidence = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->confidence->sensor_id = 2;
-  pImpl->confidence->frame_type = 3;      // confidence
-  pImpl->confidence->frame_data_type = 7; // U8C1
-  pImpl->confidence->timestamps.push_back(CurrentTimeMs());
-  pImpl->confidence->timestamps.push_back(CurrentTimeMs());
+  pImpl->confidence->sensor_type = SensorType::SensorTypeConfidence; // 3 ~ not 2; TODO really??
+  pImpl->confidence->frame_type = FrameType::FRameTypeConfidence;   // 3 confidence
+  pImpl->confidence->frame_data_type = FrameDataTypeU8C1; // 7 U8C1
+  pImpl->confidence->timestamps.push_back(CurrentTimeNs());
+  pImpl->confidence->timestamps.push_back(CurrentTimeNs());
 
   @autoreleasepool
   {
@@ -295,18 +300,20 @@ unsigned int iPhoneReader::GetFps()
   return pImpl->fps;
 }
 
-vector<unsigned int> iPhoneReader::GetType()
+vector<FrameType> iPhoneReader::GetType()
 {
-  vector<unsigned int> res;
+  vector<FrameType> res;
   res.push_back(0);
   
   if (@available(iOS 14.0, *))
   {
     if ([ARWorldTrackingConfiguration supportsFrameSemantics:ARFrameSemanticSceneDepth])
     {
-      res.push_back(1); // Depth
-      res.push_back(3); // Confidence
+      res.push_back(FrameType::FrameTypeDepth); // 1:Depth
+      res.push_back(FrameType::FrameTypeConfidence); // #:Confidence
     }
   }
   return res;
+}
+
 }

@@ -1,6 +1,7 @@
-//
+/**
+ * \file ssp_server.cc SSP, server side.
+ */
 // Created by amourao on 26-06-2019.
-//
 
 #ifdef _WIN32
 #include <io.h>
@@ -46,6 +47,9 @@
 #include "../utils/kinect_utils.h"
 #endif
 
+using namespace moetsi::ssp;
+// TODO: code ex here for the factories ~
+
 extern "C" SSP_EXPORT int ssp_server(const char* filename)
 {
   av_log_set_level(AV_LOG_QUIET);
@@ -58,7 +62,7 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
     socket.set(zmq::sockopt::immediate, true);
 
     // Do not keep packets if there is network congestion
-    //socket.set(zmq::sockopt::conflate, true);
+    // socket.set(zmq::sockopt::conflate, true);
 
     std::string codec_parameters_file = std::string(filename);
 
@@ -134,10 +138,10 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
 
     std::unordered_map<unsigned int, std::shared_ptr<IEncoder>> encoders;
 
-    std::vector<unsigned int> types = reader->GetType();
+    std::vector<FrameType> types = reader->GetType();
 
-    for (unsigned int type : types) {
-      YAML::Node v = codec_parameters["video_encoder"][type];
+    for (FrameType type : types) {
+      YAML::Node v = codec_parameters["video_encoder"][unsigned(type)];
       std::string encoder_type = v["type"].as<std::string>();
       std::shared_ptr<IEncoder> fe = nullptr;
       if (encoder_type == "libav")
@@ -162,10 +166,10 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
                       encoder_type);
         return 1;
       }
-      encoders[type] = fe;
+      encoders[unsigned(type)] = fe;
     }
 
-    uint64_t last_time = CurrentTimeMs();
+    uint64_t last_time = CurrentTimeNs();
     uint64_t start_time = last_time;
     uint64_t start_frame_time = last_time;
     uint64_t sent_frames = 0;
@@ -178,7 +182,7 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
     socket.connect("tcp://" + host + ":" + std::to_string(port));
 
     unsigned int fps = reader->GetFps();
-    unsigned int frame_time = 1000/fps;
+    unsigned int frame_time = 1000000000ULL/fps;
 
     while (1) {
 
@@ -188,10 +192,10 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
         std::this_thread::sleep_for(std::chrono::milliseconds(sleep_time));
       }
 
-      start_frame_time = CurrentTimeMs();
+      start_frame_time = CurrentTimeNs();
 
       if (sent_frames == 0) {
-        last_time = CurrentTimeMs();
+        last_time = CurrentTimeNs();
         start_time = last_time;
       }
 
@@ -204,7 +208,7 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
         for (std::shared_ptr<FrameStruct> frameStruct : frameStruct) {
 
           std::shared_ptr<IEncoder> frameEncoder =
-              encoders[frameStruct->frame_type];
+              encoders[unsigned(frameStruct->frame_type)];
 
           frameEncoder->AddFrameStruct(frameStruct);
           if (frameEncoder->HasNextPacket()) {
@@ -231,34 +235,34 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
         sent_frames += 1;
         sent_kbytes += message.size() / 1000.0;
 
-        uint64_t diff_time = CurrentTimeMs() - last_time;
+        uint64_t diff_time = CurrentTimeNs() - last_time;
 
-        double diff_start_time = (CurrentTimeMs() - start_time);
+        double diff_start_time = (CurrentTimeNs() - start_time);
         int64_t avg_fps;
         if (diff_start_time == 0)
           avg_fps = -1;
         else {
           double avg_time_per_frame_sent_ms =
               diff_start_time / (double)sent_frames;
-          avg_fps = 1000 / avg_time_per_frame_sent_ms;
+          avg_fps = 1000000000ULL / avg_time_per_frame_sent_ms;
         }
 
-        last_time = CurrentTimeMs();
+        last_time = CurrentTimeNs();
         processing_time = last_time - start_frame_time;
 
         sent_latency += diff_time;
 
         spdlog::debug(
-            "Message sent, took {} ms (avg. {:3.2f}); packet size {}; avg {} fps; "
+            "Message sent, took {} ns (avg. {:3.2f}); packet size {}; avg {} fps; "
             "{:3.2f} Mbps; {:3.2f} Mbps expected",
             diff_time, sent_latency / sent_frames, message.size(), avg_fps,
-            8 * (sent_kbytes / (CurrentTimeMs() - start_time)),
+            8 * (sent_kbytes * 1000000ULL / (CurrentTimeNs() - start_time)),
             8 * (sent_kbytes * reader->GetFps() / (sent_frames * 1000)));
 
         for (unsigned int i = 0; i < v.size(); i++) {
           FrameStruct f = v.at(i);
           f.frame.clear();
-          spdlog::debug("\t{};{};{} sent", f.device_id, f.sensor_id,
+          spdlog::debug("\t{};{};{} sent", f.device_id, f.sensor_type,
                         f.frame_id);
           vO.at(i)->frame.clear();
           vO.at(i) = nullptr;

@@ -1,11 +1,14 @@
-//
+/**
+ * \file zdepth_decoder.h ZDepth decoder
+ */
 // Created by amourao on 23-09-2019.
-//
 
 #pragma once
 
 #include "idecoder.h"
 #include "zdepth.hpp"
+
+namespace moetsi::ssp {
 
 class ZDepthDecoder : public IDecoder {
 private:
@@ -20,3 +23,5 @@ public:
   void Init(std::vector<unsigned char> parameter_data);
   cv::Mat Decode(FrameStruct& frame);
 };
+
+} // namespace moetsi::ssp

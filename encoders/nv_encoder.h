@@ -1,7 +1,7 @@
-//
+/**
+ * \file nv_encoder.h NvPipe encoder
+ */
 // Created by amourao on 11-09-2019.
-//
-
 #pragma once
 
 #include <NvPipe.h>
@@ -10,13 +10,15 @@
 #include "../decoders/libav_decoder.h"
 #include "../utils/image_decoder.h"
 #include "iencoder.h"
-#include "../structs/frame_struct.hpp"
+#include "../structs/frame_struct.h"
 #include "../utils/utils.h"
 
 #ifdef SSP_WITH_KINECT_SUPPORT
 #include "../readers/kinect_reader.h"
 #include "../utils/kinect_utils.h"
 #endif
+
+namespace moetsi::ssp {
 
 class NvEncoder : public IEncoder {
 
@@ -61,3 +63,5 @@ public:
 
   unsigned int GetFps();
 };
+
+} // namespace moetsi::ssp

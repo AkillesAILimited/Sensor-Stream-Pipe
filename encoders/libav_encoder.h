@@ -1,7 +1,7 @@
-//
+/**
+ * \file libav_encoder Jpeg/Mpeg encoder 
+ */
 // Created by amourao on 27-06-2019.
-//
-
 #pragma once
 
 #include <fstream>
@@ -9,8 +9,7 @@
 #include <queue>
 #include <vector>
 
-#include <cereal/archives/binary.hpp>
-
+// #include <cereal/archives/binary.hpp>
 #include <yaml-cpp/yaml.h>
 
 extern "C" {
@@ -34,13 +33,15 @@ extern "C" {
 }
 
 #include "../readers/image_reader.h"
-#include "../structs/frame_struct.hpp"
+#include "../structs/frame_struct.h"
 #include "../utils/image_decoder.h"
 #include "../utils/video_utils.h"
 
 #include "iencoder.h"
 #include "../decoders/libav_decoder.h"
 #include "../utils/logger.h"
+
+namespace moetsi::ssp {
 
 class LibAvEncoder : public IEncoder {
 private:
@@ -103,3 +104,5 @@ public:
   unsigned int GetFps();
 
 };
+
+} // namespace moetsi::ssp

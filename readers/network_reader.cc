@@ -1,12 +1,15 @@
-//
+/**
+ * \file network_reader.cc Network reader
+ */
 // Created by amourao on 27-09-2019.
-//
 
 #include "network_reader.h"
 #include "../utils/video_utils.h"
 
+namespace moetsi::ssp {
+
 NetworkReader::NetworkReader(int port) {
-  last_time_ = CurrentTimeMs();
+  last_time_ = CurrentTimeNs();
   start_time_ = last_time_;
   rec_frames_ = 0;
   rec_mbytes_ = 0;
@@ -53,20 +56,20 @@ void NetworkReader::NextFrame() {
   socket_->recv(&request);
 
   if (rec_frames_ == 0) {
-    last_time_ = CurrentTimeMs();
+    last_time_ = CurrentTimeNs();
     start_time_ = last_time_;
   }
 
   rec_frames_ += 1;
-  uint64_t diff_time = CurrentTimeMs() - last_time_;
-  double diff_start_time = (CurrentTimeMs() - start_time_) / (double)rec_frames_;
+  uint64_t diff_time = CurrentTimeNs() - last_time_;
+  double diff_start_time = (CurrentTimeNs() - start_time_) / (double)rec_frames_;
   int64_t avg_fps;
   if (diff_start_time == 0)
     avg_fps = -1;
   else
-    avg_fps = 1000 / diff_start_time;
+    avg_fps = 1000000000ULL / diff_start_time;
 
-  last_time_ = CurrentTimeMs();
+  last_time_ = CurrentTimeNs();
 
   std::string result =
       std::string(static_cast<char *>(request.data()), request.size());
@@ -77,25 +80,25 @@ void NetworkReader::NextFrame() {
   rec_mbytes_ += request.size() / 1000;
 
   for (unsigned int i = 0; i < f_list.size(); i++) {
-    f_list.at(i).timestamps.push_back(CurrentTimeMs());
+    f_list.at(i).timestamps.push_back(CurrentTimeNs());
   }
 
   current_frame_counter_++;
   current_frame_internal_ = f_list;
 
   spdlog::debug(
-      "Message received, took {} ms; packet size {}; avg {} fps; {:3.2f} avg "
-      "Mbps; latency: {} ms",
+      "Message received, took {} ns; packet size {}; avg {} fps; {:3.2f} avg "
+      "Mbps; latency: {} ns",
       diff_time, request.size(), avg_fps,
-      8 * (rec_mbytes_ / (CurrentTimeMs() - start_time_)),
+      8 * (1000000ULL * rec_mbytes_ / (CurrentTimeNs() - start_time_)),
       elapsed(f_list.front().timestamps.back(), f_list.front().timestamps.at(1)));
   for (FrameStruct f : f_list) {
-    std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
+    std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
     rec_mbytes_per_stream_[decoder_id] += f.frame.size() / 1000;
-    spdlog::debug("\t{};{};{} {:3.2f} avg Mbps; latency: {} ms", f.device_id,
-                  f.sensor_id, f.frame_id,
-                  8 * (rec_mbytes_per_stream_[decoder_id] /
-                       (CurrentTimeMs() - start_time_)),
+    spdlog::debug("\t{};{};{} {:3.2f} avg Mbps; latency: {} ns", f.device_id,
+                  f.sensor_type, f.frame_id,
+                  8 * (1000000ULL * rec_mbytes_per_stream_[decoder_id] /
+                       (CurrentTimeNs() - start_time_)),
                   elapsed(f.timestamps.back(), f.timestamps.at(1)));
   }
 
@@ -106,3 +109,5 @@ std::vector<FrameStruct> NetworkReader::GetCurrentFrame() {
 }
 
 unsigned int NetworkReader::GetCurrentFrameId() { return current_frame_counter_; }
+
+} // namespace moetsi::ssp

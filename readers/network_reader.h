@@ -1,15 +1,16 @@
-//
+/**
+ * \file network_reader.h Network reader
+ */
 // Created by amourao on 27-09-2019.
-//
-
 #pragma once
 
 #include <zmq.hpp>
-
-#include "../structs/frame_struct.hpp"
+#include "../structs/frame_struct.h"
 #include "ireader.h"
 
 #define POLL_TIMEOUT_MS 500
+
+namespace moetsi::ssp {
 
 class NetworkReader {
 
@@ -47,3 +48,5 @@ public:
   unsigned int GetCurrentFrameId();
 
 };
+
+} // namespace moetsi::ssp

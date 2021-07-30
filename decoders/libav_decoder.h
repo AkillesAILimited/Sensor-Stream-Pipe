@@ -1,7 +1,7 @@
-//
+/**
+ * \file libav_decoder Jpeg/Mpeg decoder
+ */
 // Created by amourao on 12-09-2019.
-//
-
 #pragma once
 
 extern "C" {
@@ -30,6 +30,8 @@ extern "C" {
 
 #include "idecoder.h"
 
+namespace moetsi::ssp {
+
 class LibAvDecoder : public IDecoder {
 private:
 
@@ -43,3 +45,5 @@ public:
   cv::Mat Decode(FrameStruct& frame_struct);
   AVFrameSharedP DecodeFrame(FrameStruct &frame_struct);
 };
+
+} // namespace moetsi::ssp

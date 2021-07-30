@@ -1,7 +1,7 @@
-//
-// Created by amourao on 12-09-2019.
-//
-
+/**
+ * \file nv_decoder.h NvPipe decoder
+ */
+// Created by amourao on 12-09-2019
 #pragma once
 
 #include <NvPipe.h>
@@ -11,6 +11,8 @@
 #include "../utils/nvpipe_types.h"
 #include "../utils/video_utils.h"
 #include "idecoder.h"
+
+namespace moetsi::ssp {
 
 class NvDecoder : public IDecoder {
 private:
@@ -27,3 +29,5 @@ public:
   void Init(std::vector<unsigned char> parameter_data);
   cv::Mat Decode(FrameStruct& frame);
 };
+
+} // namespace moetsi::ssp

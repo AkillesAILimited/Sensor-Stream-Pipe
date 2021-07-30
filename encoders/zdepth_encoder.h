@@ -1,7 +1,7 @@
-//
+/**
+ * \file zdepth_encoder.h ZDepth encoder
+ */
 // Created by amourao on 23-09-2019.
-//
-
 #pragma once
 
 #include "zdepth.hpp"
@@ -12,6 +12,7 @@
 #include "../decoders/libav_decoder.h"
 #include "../utils/image_decoder.h"
 
+namespace moetsi::ssp {
 
 class ZDepthEncoder: public IEncoder {
 private:
@@ -51,4 +52,4 @@ public:
 
 };
 
-
+} // namespace moetsi::ssp

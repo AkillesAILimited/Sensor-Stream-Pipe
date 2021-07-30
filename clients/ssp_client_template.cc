@@ -1,6 +1,7 @@
-//
+/**
+ * \file ssp_client_template.cc Template for an SSP client
+ */
 // Created by amourao on 26-06-2019.
-//
 
 #include <chrono>
 #include <iostream>
@@ -39,6 +40,8 @@ extern "C" {
 #include "../utils/video_utils.h"
 #include "../utils/image_converter.h"
 
+using namespace moetsi::ssp;
+
 extern "C" SSP_EXPORT int ssp_client_template(int port) {
   av_log_set_level(AV_LOG_QUIET);
 
@@ -54,7 +57,7 @@ extern "C" SSP_EXPORT int ssp_client_template(int port) {
       reader.NextFrame();
       std::vector<FrameStruct> f_list = reader.GetCurrentFrame();
       for (FrameStruct f : f_list) {
-        std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
+        std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
 
         cv::Mat img;
         imgChanged = FrameStructToMat(f, img, decoders);

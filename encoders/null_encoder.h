@@ -1,10 +1,13 @@
-//
+/**
+ * \file null_encoder.h Straight pipe encoder
+ */
 // Created by amourao on 16/09/19.
-//
-
 #pragma once
 
 #include "iencoder.h"
+
+namespace moetsi::ssp {
+
 class NullEncoder : public IEncoder {
 private:
   std::shared_ptr<FrameStruct> frame;
@@ -29,3 +32,5 @@ public:
 
   unsigned int GetFps();
 };
+
+} // namespace moetsi::ssp

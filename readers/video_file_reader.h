@@ -1,7 +1,7 @@
-//
+/**
+ * \file video_file_reader.h Video file reader support
+ */ 
 // Created by amourao on 27-06-2019.
-//
-
 #pragma once
 
 #include <fstream>
@@ -31,11 +31,13 @@ extern "C" {
 #endif
 }
 
-#include <cereal/archives/binary.hpp>
+// #include <cereal/archives/binary.hpp>
 
-#include "../structs/frame_struct.hpp"
+#include "../structs/frame_struct.h"
 #include "../utils/utils.h"
 #include "ireader.h"
+
+namespace moetsi::ssp {
 
 class VideoFileReader : public IReader {
 private:
@@ -82,7 +84,7 @@ public:
 
   void NextFrame();
 
-  std::vector<unsigned int> GetType();
+  std::vector<FrameType> GetType();
 
   std::vector<std::shared_ptr<FrameStruct>> GetCurrentFrame();
 
@@ -90,3 +92,5 @@ public:
 
   unsigned int GetFps();
 };
+
+} // namespace moetsi::ssp

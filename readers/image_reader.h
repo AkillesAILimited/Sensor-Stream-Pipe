@@ -1,27 +1,27 @@
-//
+/**
+ * \file image_reader.h Image reader
+ */
 // Created by amourao on 27-06-2019.
-//
-
 #pragma once
 
 #include <fstream>
 #include <iostream>
 #include <vector>
 
-#include <cereal/archives/binary.hpp>
-
-#include "../structs/frame_struct.hpp"
+#include "../structs/frame_struct.h"
 #include "../utils/image_decoder.h"
 #include "ireader.h"
+
+namespace moetsi::ssp {
 
 class ImageReader : public IReader {
 private:
   unsigned int frame_counter_;
   unsigned int fps_;
   std::string scene_desc_;
-  unsigned int sensor_id_;
+  SensorType sensor_id_;
   unsigned int device_id_;
-  unsigned int frame_type_;
+  FrameType frame_type_;
   std::string stream_id_;
 
   std::shared_ptr<CodecParamsStruct> codec_params_struct_;
@@ -50,7 +50,9 @@ public:
 
   unsigned int GetCurrentFrameId();
 
-  std::vector<unsigned int> GetType();
+  std::vector<FrameType> GetType();
 
   unsigned int GetFps();
 };
+
+} // namespace moetsi::ssp
