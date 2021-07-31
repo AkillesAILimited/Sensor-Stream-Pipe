@@ -3,7 +3,7 @@
 mkdir include
 mkdir include/decoders
 cp -fv decoders/idecoder.h include/decoders
-mkdir include/ecoders
+mkdir include/encoders
 cp -fv encoders/iencoder.h include/encoders
 mkdir include/readers
 cp -fv readers/ireader.h include/readers
