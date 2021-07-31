@@ -220,7 +220,7 @@ void FrameStructToK4A(std::vector<FrameStruct> &fs,
                       k4a::capture &sensor_capture,
                       std::unordered_map<std::string, std::shared_ptr<IDecoder>> &decoders) {
   for (auto &f : fs) {
-    std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+    std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
 
     if (decoders.find(decoder_id) == decoders.end()) {
       CodecParamsStruct data = f.codec_data;
@@ -272,7 +272,7 @@ void FrameStructToK4A(std::vector<FrameStruct> &fs,
 
       std::shared_ptr<IDecoder> decoder;
 
-      std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+      std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
 
       if (decoders.find(decoder_id) == decoders.end()) {
         CodecParamsStruct data = f.codec_data;

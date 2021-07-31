@@ -185,7 +185,7 @@ set(SOURCE_FILES
     readers/image_reader.h
     readers/multi_image_reader.cc
     readers/multi_image_reader.h
-    structs/frame_struct.hpp
+    structs/frame_struct.h
     utils/image_converter.cc
     utils/image_converter.h
     utils/image_decoder.cc
@@ -199,11 +199,13 @@ set(SOURCE_FILES
     utils/video_utils.cc
     utils/video_utils.h
 
+    decoders/idecoder.cc
     decoders/libav_decoder.cc
     decoders/libav_decoder.h
     decoders/zdepth_decoder.cc
     decoders/zdepth_decoder.h
 
+    encoders/iencoder.cc
     encoders/zdepth_encoder.cc
     encoders/zdepth_encoder.h
     encoders/null_encoder.cc
@@ -211,6 +213,7 @@ set(SOURCE_FILES
     encoders/libav_encoder.cc
     encoders/libav_encoder.h
 
+    readers/ireader.cc
     readers/video_file_reader.cc
     readers/video_file_reader.h
     readers/image_reader.cc

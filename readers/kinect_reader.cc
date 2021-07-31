@@ -183,7 +183,7 @@ void KinectReader::NextFrame() {
       if (color_image && k4a_image_get_format(color_image) != 6) {
         std::shared_ptr<FrameStruct> s =
             std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-        s->sensor_type = SensorType::SensorTypeColor; // = 0;
+        s->sensor_id = 0;
         s->frame_type = FrameType::FrameTypeColor; // = 0;
         s->frame_id = frame_counter_.at(0)++;
         s->timestamps.push_back(
@@ -233,7 +233,7 @@ void KinectReader::NextFrame() {
 
         std::shared_ptr<FrameStruct> s =
             std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-        s->sensor_type = SensorType::SensorTypeDepth; // = 1;
+        s->sensor_id = 1;
         s->frame_type = FrameType::FrameTypeDepth; // =1;
         s->frame_data_type = FrameDataType::FrameDataTypeGRAY16LE; // = 3;
         s->frame_id = frame_counter_.at(1)++;
@@ -265,7 +265,7 @@ void KinectReader::NextFrame() {
       if (ir_image && k4a_image_get_format(ir_image) != 6) {
         std::shared_ptr<FrameStruct> s =
             std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-        s->sensor_type = SensorType::SensorTypeIR; // = 2;
+        s->sensor_id = 2;
         s->frame_type = FrameType::FrameTypeIR; // = 2;
         s->frame_id = frame_counter_.at(2)++;
         s->frame_data_type = FrameDataType::FrameDataTypeGRAY16LE; // = 3;

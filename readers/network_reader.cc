@@ -93,10 +93,10 @@ void NetworkReader::NextFrame() {
       8 * (1000000ULL * rec_mbytes_ / (CurrentTimeNs() - start_time_)),
       elapsed(f_list.front().timestamps.back(), f_list.front().timestamps.at(1)));
   for (FrameStruct f : f_list) {
-    std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+    std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
     rec_mbytes_per_stream_[decoder_id] += f.frame.size() / 1000;
     spdlog::debug("\t{};{};{} {:3.2f} avg Mbps; latency: {} ns", f.device_id,
-                  f.sensor_type, f.frame_id,
+                  f.sensor_id, f.frame_id,
                   8 * (1000000ULL * rec_mbytes_per_stream_[decoder_id] /
                        (CurrentTimeNs() - start_time_)),
                   elapsed(f.timestamps.back(), f.timestamps.at(1)));

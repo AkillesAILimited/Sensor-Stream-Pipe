@@ -96,21 +96,21 @@ iPhoneReader::iPhoneReader()
   frame_template_.stream_id = RandomString(16);
   
   pImpl->image = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->image->sensor_type = SensorType::SensorTypeColor; // 0
+  pImpl->image->sensor_id = 0;
   pImpl->image->frame_type = FrameType::FrameTypeColor;      // 0 image
   pImpl->image->frame_data_type = FrameDataType::FrameDataTypeYUV; // 6 YUV
   pImpl->image->timestamps.push_back(CurrentTimeNs());
   pImpl->image->timestamps.push_back(CurrentTimeNs());
 
   pImpl->depth = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->depth->sensor_type = SensorType::SensorTypeDepth; // 1
+  pImpl->depth->sensor_id = 1;
   pImpl->depth->frame_type = FrameType::FrameTypeDepth;      // 1 depth
   pImpl->depth->frame_data_type = FrameDataType::FrameDataTypeRaw32FC1; // 5 float
   pImpl->depth->timestamps.push_back(CurrentTimeNs());
   pImpl->depth->timestamps.push_back(CurrentTimeNs());
   
   pImpl->confidence = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
-  pImpl->confidence->sensor_type = SensorType::SensorTypeConfidence; // 3 ~ not 2; TODO really??
+  pImpl->confidence->sensor_id = 2;
   pImpl->confidence->frame_type = FrameType::FRameTypeConfidence;   // 3 confidence
   pImpl->confidence->frame_data_type = FrameDataTypeU8C1; // 7 U8C1
   pImpl->confidence->timestamps.push_back(CurrentTimeNs());

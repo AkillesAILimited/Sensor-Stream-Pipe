@@ -48,7 +48,6 @@
 #endif
 
 using namespace moetsi::ssp;
-// TODO: code ex here for the factories ~
 
 extern "C" SSP_EXPORT int ssp_server(const char* filename)
 {
@@ -262,7 +261,7 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
         for (unsigned int i = 0; i < v.size(); i++) {
           FrameStruct f = v.at(i);
           f.frame.clear();
-          spdlog::debug("\t{};{};{} sent", f.device_id, f.sensor_type,
+          spdlog::debug("\t{};{};{} sent", f.device_id, f.sensor_id,
                         f.frame_id);
           vO.at(i)->frame.clear();
           vO.at(i) = nullptr;

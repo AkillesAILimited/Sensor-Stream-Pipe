@@ -62,7 +62,7 @@ bool FrameStructToMat(FrameStruct &f, cv::Mat &img,
   //  } else if (f.frame_data_type == 0 || f.frame_data_type == 1) {  
   } else if (f.frame_data_type == FrameDataType::FrameDataTypeImageFrame || f.frame_data_type == FrameDataType::FrameDataTypeLibavPackets) {
 
-    std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+    std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
 
     if (decoders.find(decoder_id) == decoders.end()) {
       CodecParamsStruct data = f.codec_data;

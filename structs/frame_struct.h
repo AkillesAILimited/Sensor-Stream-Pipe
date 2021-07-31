@@ -263,12 +263,10 @@ struct FrameStruct {
    */
   std::string scene_desc;
 
-  // 0 for color, 1 for depth: currently redundant with frameType, but
-  // distinction may be needed in the future
   /**
-   * Sensor type
+   * Sensor id
    */
-  SensorType sensor_type;
+  unsigned int sensor_id;
 
   /**
    * Integer device id: distingish between devices in the same scene
@@ -292,7 +290,7 @@ struct FrameStruct {
   // Serialize method (not used by Server but is available)
   template <class Archive> void serialize(Archive &ar) {
     ar(message_type, frame_type, frame_data_type, stream_id, frame, codec_data,
-       camera_calibration_data, scene_desc, sensor_type, device_id, frame_id,
+       camera_calibration_data, scene_desc, sensor_id, device_id, frame_id,
        timestamps);
   }
 #endif // !__MOETSI_RAAS__

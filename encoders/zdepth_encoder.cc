@@ -44,7 +44,7 @@ void ZDepthEncoder::AddFrameStruct(std::shared_ptr<FrameStruct> &fs) {
     frame_compressed_->frame_id = total_frame_counter_;
     frame_compressed_->frame_type = fs->frame_type;
     frame_compressed_->message_type = fs->message_type;
-    frame_compressed_->sensor_type = fs->sensor_type;
+    frame_compressed_->sensor_id = fs->sensor_id;
     frame_compressed_->stream_id = stream_id_;
     frame_compressed_->scene_desc = fs->scene_desc;
     frame_compressed_->timestamps.clear();

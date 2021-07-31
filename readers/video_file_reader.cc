@@ -233,7 +233,7 @@ void VideoFileReader::NextFrame() {
       frame_struct->frame = std::vector<unsigned char>(
           &packet_->data[0], &packet_->data[0] + packet_->size);
       frame_struct->frame_id = current_frame_counter_;
-      frame_struct->sensor_type = SensorType(packet_->stream_index);
+      frame_struct->sensor_id = packet_->stream_index;
       frame_struct->frame_type = FrameType(packet_->stream_index);
       frame_struct->timestamps.push_back(packet_->pts);
       frame_struct->timestamps.push_back(CurrentTimeNs());

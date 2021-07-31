@@ -19,7 +19,7 @@ private:
   unsigned int frame_counter_;
   unsigned int fps_;
   std::string scene_desc_;
-  SensorType sensor_id_;
+  unsigned int sensor_id_;
   unsigned int device_id_;
   FrameType frame_type_;
   std::string stream_id_;

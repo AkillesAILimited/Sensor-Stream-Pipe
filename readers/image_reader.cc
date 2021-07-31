@@ -27,7 +27,7 @@ ImageReader::ImageReader(std::string filename) {
     getline(ss, frame_type_str, ';');
     getline(ss, fps_str);
 
-    sensor_id_ = SensorType(std::stoul(sensor_id_str));
+    sensor_id_ = std::stoul(sensor_id_str);
     device_id_ = std::stoul(device_id_str);
     frame_type_ = FrameType(std::stoul(frame_type_str));
     fps_ = std::stoul(fps_str);
@@ -95,7 +95,7 @@ std::shared_ptr<FrameStruct> ImageReader::CreateFrameStruct(unsigned int frame_i
   frame->frame_data_type = FrameDataType::FrameDataTypeImageFrame; // 0;
   frame->scene_desc = scene_desc_;
   frame->device_id = device_id_;
-  frame->sensor_type = sensor_id_;
+  frame->sensor_id = sensor_id_;
   frame->frame_type = frame_type_;
   frame->timestamps.push_back((1000000000ULL / uint64_t(fps_)) * frame_counter_);
   frame->timestamps.push_back(CurrentTimeNs());

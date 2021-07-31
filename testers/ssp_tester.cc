@@ -200,7 +200,7 @@ int main(int argc, char *argv[]) {
           FrameStruct f = FrameStruct(*frameEncoder->CurrentFrameEncoded());
           FrameStruct fo = FrameStruct(*frameEncoder->CurrentFrameOriginal());
 
-          std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+          std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
 
           if (original_sizes.find(decoder_id) == original_sizes.end()) {
             original_sizes[decoder_id] = 0;
@@ -238,7 +238,7 @@ int main(int argc, char *argv[]) {
     spdlog::debug("Message {} processed", i++);
 
     for (FrameStruct f : v) {
-      std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+      std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
       cv::Mat img;
       bool img_changed = FrameStructToMat(f, img, decoders);
       if (!img.empty() && img_changed) {

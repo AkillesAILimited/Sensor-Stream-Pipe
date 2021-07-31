@@ -70,6 +70,6 @@ public:
  * \param config configuration
  * \return an IReader instance
  */
-std::shared_ptr<IReader> IReaderFactory(const std::string & config); // TODO implement
+std::shared_ptr<IReader> IReaderFactory(const std::string & config);
 
 } // namespace moetsi::ssp

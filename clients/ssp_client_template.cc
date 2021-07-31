@@ -57,7 +57,7 @@ extern "C" SSP_EXPORT int ssp_client_template(int port) {
       reader.NextFrame();
       std::vector<FrameStruct> f_list = reader.GetCurrentFrame();
       for (FrameStruct f : f_list) {
-        std::string decoder_id = f.stream_id + std::to_string(uint64_t(f.sensor_type));
+        std::string decoder_id = f.stream_id + std::to_string(f.sensor_id);
 
         cv::Mat img;
         imgChanged = FrameStructToMat(f, img, decoders);
