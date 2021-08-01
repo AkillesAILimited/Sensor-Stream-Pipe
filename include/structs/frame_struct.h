@@ -13,8 +13,11 @@
 #include <cereal/types/memory.hpp>
 #include <cereal/types/vector.hpp>
 #include "../utils/utils.h"
-#endif //!__MOETSI_RAAS__
+#endif // !__MOETSI_RAAS__
 
+/**
+ * @brief Sensor Stream Pipe
+ */ 
 namespace moetsi::ssp {
 
 /**

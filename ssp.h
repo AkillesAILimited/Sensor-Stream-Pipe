@@ -6,3 +6,17 @@
 #include "encoders/iencoder.h"
 #include "decoders/idecoder.h"
 #include "readers/ireader.h"
+
+/**
+ * @brief Moetsi creations
+ * \ingroup moetsi
+ */
+namespace moetsi {
+    /**
+     * @brief Sensor Stream Pipe
+     * \ingroup ssp
+     */
+    namespace ssp {
+
+    }
+}
