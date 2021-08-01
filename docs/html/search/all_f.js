@@ -12,7 +12,6 @@ var searchData=
   ['setuplogging',['SetupLogging',['../namespacemoetsi_1_1ssp.html#a0af356ab87e92f92c49e7118b9cb1ba2',1,'moetsi::ssp::SetupLogging(std::string &amp;level, std::string &amp;file)'],['../namespacemoetsi_1_1ssp.html#a732d178071710fdceab189671f2d7c25',1,'moetsi::ssp::SetupLogging(YAML::Node &amp;general_parameters)']]],
   ['similarity_5fmeasures_2eh',['similarity_measures.h',['../similarity__measures_8h.html',1,'']]],
   ['size',['size',['../structmoetsi_1_1ssp_1_1buffer__data.html#acd14a543f9ab4ccb7d5c9f8312861892',1,'moetsi::ssp::buffer_data']]],
-  ['ssp_2eh',['ssp.h',['../ssp_8h.html',1,'']]],
   ['ssp_5fclient_5fk4a_2ecc',['ssp_client_k4a.cc',['../ssp__client__k4a_8cc.html',1,'']]],
   ['ssp_5fclient_5fopencv_2ecc',['ssp_client_opencv.cc',['../ssp__client__opencv_8cc.html',1,'']]],
   ['ssp_5fclient_5ftemplate_2ecc',['ssp_client_template.cc',['../ssp__client__template_8cc.html',1,'']]],

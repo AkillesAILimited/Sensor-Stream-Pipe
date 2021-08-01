@@ -1,5 +1,5 @@
 /**
- * \file iphone_reader.mm iPhone driver
+ * \file iphone_reader.mm @brief iPhone driver
  */
 // Created by David Geldreich on 1-06-2021.
 

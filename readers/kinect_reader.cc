@@ -1,5 +1,5 @@
 /**
- * \file kinect_reader.cc Kinect driver
+ * \file kinect_reader.cc @brief Kinect driver
  */
 // Created by amourao on 26-06-2019.
 #include "kinect_reader.h"

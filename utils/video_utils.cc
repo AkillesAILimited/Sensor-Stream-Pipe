@@ -1,5 +1,5 @@
 /**
- * Namespace video_utils.cc Video utilities 
+ * Namespace video_utils.cc @brief Video utilities 
  */
 #include "video_utils.h"
 #include "libav_types.h"

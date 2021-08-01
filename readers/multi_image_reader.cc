@@ -1,5 +1,5 @@
 /**
- * \file multi_image_reader.cc Multi image reader
+ * \file multi_image_reader.cc @brief Multi image reader
  */
 // Created by amourao on 26-06-2019.
 #include "multi_image_reader.h"

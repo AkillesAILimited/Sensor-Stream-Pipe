@@ -1,5 +1,5 @@
 /**
- * Namespace libav_types.h Types for libav support
+ * Namespace libav_types.h @brief Types for libav support
  */
 // Created by amourao on 28-10-2019.
 #pragma once

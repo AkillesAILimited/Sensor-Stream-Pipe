@@ -7,13 +7,13 @@ var searchData=
   ['nextpacket',['NextPacket',['../classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274',1,'moetsi::ssp::IEncoder::NextPacket()'],['../classmoetsi_1_1ssp_1_1LibAvEncoder.html#acf5e6e2f172d24778c7942c8cd37330b',1,'moetsi::ssp::LibAvEncoder::NextPacket()'],['../classmoetsi_1_1ssp_1_1NullEncoder.html#a5fe7215f2b462690208b2a144e962e14',1,'moetsi::ssp::NullEncoder::NextPacket()'],['../classmoetsi_1_1ssp_1_1NvEncoder.html#a1c6d801fbb40e7dea2b33dd2ac154919',1,'moetsi::ssp::NvEncoder::NextPacket()'],['../classmoetsi_1_1ssp_1_1ZDepthEncoder.html#ae3911f396fc8b86c04c94dc71e1c0672',1,'moetsi::ssp::ZDepthEncoder::NextPacket()'],['../classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274',1,'moetsi::ssp::IEncoder::NextPacket()']]],
   ['null_5fencoder_2ecc',['null_encoder.cc',['../null__encoder_8cc.html',1,'']]],
   ['null_5fencoder_2eh',['null_encoder.h',['../null__encoder_8h.html',1,'']]],
-  ['nullencoder',['NullEncoder',['../classmoetsi_1_1ssp_1_1NullEncoder.html',1,'moetsi::ssp']]],
+  ['nullencoder',['NullEncoder',['../classmoetsi_1_1ssp_1_1NullEncoder.html',1,'moetsi::ssp::NullEncoder'],['../classmoetsi_1_1ssp_1_1NullEncoder.html#aaae4b8ed8b56ae9526f04853b56d1650',1,'moetsi::ssp::NullEncoder::NullEncoder()']]],
   ['nv_5fdecoder_2ecc',['nv_decoder.cc',['../nv__decoder_8cc.html',1,'']]],
   ['nv_5fdecoder_2eh',['nv_decoder.h',['../nv__decoder_8h.html',1,'']]],
   ['nv_5fencoder_2ecc',['nv_encoder.cc',['../nv__encoder_8cc.html',1,'']]],
   ['nv_5fencoder_2eh',['nv_encoder.h',['../nv__encoder_8h.html',1,'']]],
-  ['nvdecoder',['NvDecoder',['../classmoetsi_1_1ssp_1_1NvDecoder.html',1,'moetsi::ssp']]],
-  ['nvencoder',['NvEncoder',['../classmoetsi_1_1ssp_1_1NvEncoder.html',1,'moetsi::ssp']]],
+  ['nvdecoder',['NvDecoder',['../classmoetsi_1_1ssp_1_1NvDecoder.html',1,'moetsi::ssp::NvDecoder'],['../classmoetsi_1_1ssp_1_1NvDecoder.html#a40f19812c72e18affbc63a52a3bc223c',1,'moetsi::ssp::NvDecoder::NvDecoder()']]],
+  ['nvencoder',['NvEncoder',['../classmoetsi_1_1ssp_1_1NvEncoder.html',1,'moetsi::ssp::NvEncoder'],['../classmoetsi_1_1ssp_1_1NvEncoder.html#aab4a3ce1729dba51183b77adcc78aa5e',1,'moetsi::ssp::NvEncoder::NvEncoder()']]],
   ['nvpipe_5ftypes_2eh',['nvpipe_types.h',['../nvpipe__types_8h.html',1,'']]],
   ['nvpipedeleter',['NVPipeDeleter',['../structmoetsi_1_1ssp_1_1NVPipeDeleter.html',1,'moetsi::ssp']]]
 ];

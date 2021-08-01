@@ -1,5 +1,5 @@
 /**
- * \file ssp_tester.cc SSP test program
+ * \file ssp_tester.cc @brief SSP test program
  */
 // Created by amourao on 07/08/19.
 

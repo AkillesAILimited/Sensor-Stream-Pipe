@@ -1,5 +1,5 @@
 /**
- * \file nv_encoder.cc NvPipe encoder
+ * \file nv_encoder.cc @brief NvPipe encoder
  */
 // Created by amourao on 11-09-2019.
 

@@ -1,5 +1,10 @@
 \hypertarget{image__converter_8h}{}\section{image\+\_\+converter.\+h File Reference}
 \label{image__converter_8h}\index{image\+\_\+converter.\+h@{image\+\_\+converter.\+h}}
+
+
+Image converter from frame struct to opencv.  
+
+
 {\ttfamily \#include \char`\"{}../decoders/idecoder.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../structs/frame\+\_\+struct.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$opencv2/core/mat.\+hpp$>$}\newline
@@ -26,8 +31,9 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 bool \hyperlink{namespacemoetsi_1_1ssp_ac87377cef5da79f1a9cf7a4acdc42af6}{moetsi\+::ssp\+::\+Frame\+Struct\+To\+Mat} (Frame\+Struct \&f, cv\+::\+Mat \&img, std\+::unordered\+\_\+map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ I\+Decoder $>$$>$ \&decoders)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Convert frame struct to opencv matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Image converter from frame struct to opencv 
+Image converter from frame struct to opencv. 
+

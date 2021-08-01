@@ -1,5 +1,5 @@
 /**
- * \file video_file_reader.cc Video file reader
+ * \file video_file_reader.cc @brief Video file reader
  */
 // Created by amourao on 26-06-2019.
 #include "video_file_reader.h"

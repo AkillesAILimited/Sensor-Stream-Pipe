@@ -1,5 +1,5 @@
 /**
- * \file ssp_client_template.cc Template for an SSP client
+ * \file ssp_client_template.cc @brief Template for an SSP client
  */
 // Created by amourao on 26-06-2019.
 

@@ -71,6 +71,9 @@ $(function() {
 <div class="title">image_converter.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Image converter from frame struct to opencv.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;../decoders/idecoder.h&quot;</code><br />
 <code>#include &quot;../structs/frame_struct.h&quot;</code><br />
 <code>#include &lt;opencv2/core/mat.hpp&gt;</code><br />
@@ -81,8 +84,8 @@ Include dependency graph for image_converter.h:</div>
 <map name="image__converter_8h" id="image__converter_8h">
 <area shape="rect" id="node2" href="decoders_2idecoder_8h_source.html" title="../decoders/idecoder.h" alt="" coords="474,80,625,107"/>
 <area shape="rect" id="node3" href="structs_2frame__struct_8h_source.html" title="../structs/frame_struct.h" alt="" coords="378,155,540,181"/>
-<area shape="rect" id="node11" href="utils_8h_source.html" title="../utils/utils.h" alt="" coords="1042,229,1140,256"/>
-<area shape="rect" id="node16" href="logger_8h.html" title="logger.h" alt="" coords="1152,311,1220,338"/>
+<area shape="rect" id="node11" href="utils_8h.html" title="Utilities. " alt="" coords="1042,229,1140,256"/>
+<area shape="rect" id="node16" href="logger_8h.html" title="Logger header. " alt="" coords="1152,311,1220,338"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -90,10 +93,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="image__converter_8h__dep__incl.png" border="0" usemap="#image__converter_8hdep" alt=""/></div>
 <map name="image__converter_8hdep" id="image__converter_8hdep">
-<area shape="rect" id="node2" href="ssp__client__opencv_8cc.html" title="ssp_client_opencv.cc" alt="" coords="5,80,153,107"/>
-<area shape="rect" id="node3" href="ssp__client__template_8cc.html" title="ssp_client_template.cc" alt="" coords="177,80,333,107"/>
-<area shape="rect" id="node4" href="ssp__tester_8cc.html" title="ssp_tester.cc" alt="" coords="358,80,459,107"/>
-<area shape="rect" id="node5" href="image__converter_8cc.html" title="image_converter.cc" alt="" coords="483,80,619,107"/>
+<area shape="rect" id="node2" href="ssp__client__opencv_8cc.html" title="OpenCV based ssp client client. " alt="" coords="5,80,153,107"/>
+<area shape="rect" id="node3" href="ssp__client__template_8cc.html" title="Template for an SSP client. " alt="" coords="177,80,333,107"/>
+<area shape="rect" id="node4" href="ssp__tester_8cc.html" title="SSP test program. " alt="" coords="358,80,459,107"/>
+<area shape="rect" id="node5" href="image__converter_8cc.html" title="Image converter from frame struct to opencv image. " alt="" coords="483,80,619,107"/>
 </map>
 </div>
 </div>
@@ -108,10 +111,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac87377cef5da79f1a9cf7a4acdc42af6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#ac87377cef5da79f1a9cf7a4acdc42af6">moetsi::ssp::FrameStructToMat</a> (FrameStruct &amp;f, cv::Mat &amp;img, std::unordered_map&lt; std::string, std::shared_ptr&lt; IDecoder &gt;&gt; &amp;decoders)</td></tr>
+<tr class="memdesc:ac87377cef5da79f1a9cf7a4acdc42af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frame struct to opencv matrix.  <a href="namespacemoetsi_1_1ssp.html#ac87377cef5da79f1a9cf7a4acdc42af6">More...</a><br /></td></tr>
 <tr class="separator:ac87377cef5da79f1a9cf7a4acdc42af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Image converter from frame struct to opencv </p>
+<div class="textblock"><p>Image converter from frame struct to opencv. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

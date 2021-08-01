@@ -1,5 +1,5 @@
 /**
- *\file ssp_client_point_cloud.cc Point cloud SSP client
+ *\file ssp_client_point_cloud.cc @brief Point cloud SSP client
  */
 // Created by amourao on 26-06-2019.
 

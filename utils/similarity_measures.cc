@@ -1,5 +1,5 @@
 /**
- * \file similarity_measure.cc Similarity measures
+ * \file similarity_measure.cc @brief Similarity measures
  */
 // Created by amourao on 12-08-2019.
 #include "similarity_measures.h"

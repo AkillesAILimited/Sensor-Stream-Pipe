@@ -71,21 +71,24 @@ $(function() {
 <div class="title">kinect_utils.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utils for Kinect RT integration.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="kinect__utils_8h_source.html">kinect_utils.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for kinect_utils.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="kinect__utils_8cc__incl.png" border="0" usemap="#kinect__utils_8cc" alt=""/></div>
 <map name="kinect__utils_8cc" id="kinect__utils_8cc">
-<area shape="rect" id="node2" href="kinect__utils_8h.html" title="kinect_utils.h" alt="" coords="754,80,852,107"/>
+<area shape="rect" id="node2" href="kinect__utils_8h.html" title="Utils for Kinect RT integration. " alt="" coords="754,80,852,107"/>
 <area shape="rect" id="node6" href="decoders_2idecoder_8h_source.html" title="../decoders/idecoder.h" alt="" coords="1993,393,2144,420"/>
 <area shape="rect" id="node7" href="structs_2frame__struct_8h_source.html" title="../structs/frame_struct.h" alt="" coords="2151,468,2314,495"/>
-<area shape="rect" id="node19" href="logger_8h.html" title="logger.h" alt="" coords="57,625,125,651"/>
-<area shape="rect" id="node23" href="libav__decoder_8h_source.html" title="../decoders/libav_decoder.h" alt="" coords="712,155,894,181"/>
-<area shape="rect" id="node15" href="utils_8h_source.html" title="../utils/utils.h" alt="" coords="2561,543,2658,569"/>
-<area shape="rect" id="node30" href="video__utils_8h.html" title="../utils/video_utils.h" alt="" coords="1101,229,1236,256"/>
+<area shape="rect" id="node19" href="logger_8h.html" title="Logger header. " alt="" coords="57,625,125,651"/>
+<area shape="rect" id="node23" href="libav__decoder_8h.html" title="Jpeg/Mpeg decoder. " alt="" coords="712,155,894,181"/>
+<area shape="rect" id="node15" href="utils_8h.html" title="Utilities. " alt="" coords="2561,543,2658,569"/>
+<area shape="rect" id="node30" href="video__utils_8h.html" title="Video utilities. " alt="" coords="1101,229,1236,256"/>
 <area shape="rect" id="node39" href="libav__types_8h_source.html" title="../utils/libav_types.h" alt="" coords="654,311,792,338"/>
-<area shape="rect" id="node37" href="zdepth__decoder_8h.html" title="../decoders/zdepth\l_decoder.h" alt="" coords="1811,304,1942,345"/>
+<area shape="rect" id="node37" href="zdepth__decoder_8h.html" title="ZDepth decoder. " alt="" coords="1811,304,1942,345"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -98,12 +101,14 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a357441ccde272e5d06fb708b62efa5c1"><td class="memItemLeft" align="right" valign="top">ExtendedAzureConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a357441ccde272e5d06fb708b62efa5c1">moetsi::ssp::BuildKinectConfigFromYAML</a> (YAML::Node config)</td></tr>
+<tr class="memdesc:a357441ccde272e5d06fb708b62efa5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build Kinect configuration from YAML configuration.  <a href="namespacemoetsi_1_1ssp.html#a357441ccde272e5d06fb708b62efa5c1">More...</a><br /></td></tr>
 <tr class="separator:a357441ccde272e5d06fb708b62efa5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dd4f75fe22e28fd724f4b90841ec02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a89dd4f75fe22e28fd724f4b90841ec02">moetsi::ssp::FrameStructToK4A</a> (std::vector&lt; FrameStruct &gt; &amp;fs, k4a::capture &amp;sensor_capture, std::unordered_map&lt; std::string, std::shared_ptr&lt; IDecoder &gt;&gt; &amp;decoders)</td></tr>
-<tr class="separator:a89dd4f75fe22e28fd724f4b90841ec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91f7040cdd17f24ad6760aa1bdb428d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#aa91f7040cdd17f24ad6760aa1bdb428d">moetsi::ssp::FrameStructToK4A</a> (std::vector&lt; FrameStruct &gt; &amp;f, k4a::capture &amp;sensor_capture, std::unordered_map&lt; std::string, std::shared_ptr&lt; IDecoder &gt;&gt; &amp;decoders)</td></tr>
+<tr class="memdesc:aa91f7040cdd17f24ad6760aa1bdb428d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform frame structure to K4A format Update decoder dictionary.  <a href="namespacemoetsi_1_1ssp.html#aa91f7040cdd17f24ad6760aa1bdb428d">More...</a><br /></td></tr>
+<tr class="separator:aa91f7040cdd17f24ad6760aa1bdb428d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utils for Kinect RT integration </p>
+<div class="textblock"><p>Utils for Kinect RT integration. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

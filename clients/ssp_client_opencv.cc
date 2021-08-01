@@ -1,5 +1,5 @@
 /**
- * \file ssp_client_opencv.cc OpenCV based ssp client client
+ * \file ssp_client_opencv.cc @brief OpenCV based ssp client client
  */
 // Created by amourao on 26-06-2019.
 

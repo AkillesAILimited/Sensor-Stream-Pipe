@@ -1,5 +1,5 @@
 /**
- * \file zdepth_encoder.cc ZDepth encoder
+ * \file zdepth_encoder.cc @brief ZDepth encoder
  */
 // Created by amourao on 23-09-2019.
 #include "zdepth_encoder.h"

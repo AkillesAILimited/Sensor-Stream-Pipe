@@ -1,5 +1,5 @@
 /**
- * \file null_encoder.cc Straight pipe encoder
+ * \file null_encoder.cc @brief Straight pipe encoder
  */
 // Created by amourao on 16/09/19.
 #include "null_encoder.h"

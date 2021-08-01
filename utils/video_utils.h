@@ -1,5 +1,5 @@
 /**
- * \file video_utils.h Video utilities
+ * \file video_utils.h @brief Video utilities
  */
 // Created by amourao on 07/08/19.
 #pragma once
@@ -54,21 +54,21 @@ extern "C" {
 namespace moetsi::ssp {
 
 /**
- * Convert an AVFrame to YUV image
+ * @brief Convert an AVFrame to YUV image
  * \param frame AVFrame
  * \param image dest opencv image
  */
 void AVFrameToMatYUV(AVFrameSharedP &frame, cv::Mat &image);
 
 /**
- * Convert an AVFrame to grayscale image
+ * @brief Convert an AVFrame to grayscale image
  * \param frame AVFrame
  * \param image dest opencv image
  */
 void AVFrameToMatGray(AVFrameSharedP &frame, cv::Mat &image);
 
 /**
- * Get AVCodec parameters from a FrameStruct 
+ * @brief Get AVCodec parameters from a FrameStruct 
  * \param frame_struct frame struct
  * \return AVCodec parameters 
  */

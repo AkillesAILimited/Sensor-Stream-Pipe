@@ -1,5 +1,5 @@
 /**
- * \file nv_decoder.h NvPipe decoder
+ * \file nv_decoder.h @brief NvPipe decoder
  */
 // Created by amourao on 12-09-2019
 #pragma once
@@ -14,6 +14,9 @@
 
 namespace moetsi::ssp {
 
+/**
+ * @brief NvPipe decoder
+ */
 class NvDecoder : public IDecoder {
 private:
   NvPipe* decoder_;
@@ -24,9 +27,20 @@ private:
   NvPipe_Format format_;
 
 public:
+  /** @brief Constructor */
   NvDecoder();
+  /** @brief Destructor */
   ~NvDecoder();
+  /**
+   *  @brief Initialize. 
+   *  \param parameter_data parameters
+   */ 
   void Init(std::vector<unsigned char> parameter_data);
+  /**
+   * @brief Extract an opencv image from a FrameStruct
+   * \param data FrameStruct
+   * \return OpenCV matrix/image
+   */  
   cv::Mat Decode(FrameStruct& frame);
 };
 

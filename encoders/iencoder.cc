@@ -1,6 +1,7 @@
 /**
- * \file iencoder.cc IEncoder factory
+ * \file iencoder.cc @brief IEncoder factory
  */
+
 #include "iencoder.h"
 #include "../utils/logger.h"
 

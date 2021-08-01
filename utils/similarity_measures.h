@@ -1,5 +1,5 @@
 /**
- * \file similarity_measures.h Similarity measures
+ * \file similarity_measures.h @brief Similarity measures
  */
 // Created by amourao on 12-08-2019.
 #pragma once
@@ -12,7 +12,7 @@ namespace moetsi::ssp {
 using namespace cv;
 
 /**
- * Get Peak Signal to Noise Ration similarity
+ * @brief Get Peak Signal to Noise Ration similarity
  * \param I1 image 1
  * \param I2 image 2
  * \param max_value max value in the PSNR formula
@@ -21,7 +21,7 @@ using namespace cv;
 double GetPSNR(const Mat &I1, const Mat &I2, double max_value);
 
 /**
- * Get Mean Square Error (distance) between images
+ * @brief Get Mean Square Error (distance) between images
  * \param I1 image 1
  * \param I2 image 2
  * \return MSE between these 2 images
@@ -29,7 +29,7 @@ double GetPSNR(const Mat &I1, const Mat &I2, double max_value);
 double GetMSE(const Mat &I1, const Mat &I2);
 
 /**
- * Get Structural Similarity between 2 images
+ * @brief Get Structural Similarity between 2 images
  * cf. for instance http://amroamroamro.github.io/mexopencv/opencv/image_similarity_demo.html for a simple SSIM introduction
  * \param I1 image 1
  * \param I2 image 2

@@ -1,5 +1,5 @@
 /**
- * \file ssp_client_k4a.cc SSP client with lib k4a
+ * \file ssp_client_k4a.cc @brief SSP client with lib k4a
  */
 // Created by amourao on 26-06-2019.
 

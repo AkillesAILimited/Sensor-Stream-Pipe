@@ -1,5 +1,5 @@
 /**
- * \file image_decoder.h AV Image decoder
+ * \file image_decoder.h @brief AV Image decoder
  */
 // Created by amourao on 28/08/19.
 #pragma once
@@ -29,7 +29,7 @@ extern "C" {
 namespace moetsi::ssp {
 
 /**
- * DEcode image to AV frame
+ * @brief Decode image to AV frame
  */
 class ImageDecoder {
 
@@ -52,13 +52,13 @@ private:
 
   int DecodePacket(AVFrameSharedP pFrame);
 public:
-  /** Contructor */
+  /** @brief Contructor */
   ImageDecoder();
-  /** Destructor */
+  /** @brief Destructor */
   ~ImageDecoder();
 
   /**
-   * Read frame structs to AVFrame.s
+   * @brief Read frame structs to AVFrame.s
    * \param fs frame structs
    * \param pFrame destination AVFrame
    */

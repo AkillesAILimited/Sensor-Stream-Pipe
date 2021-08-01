@@ -1,5 +1,5 @@
 /**
- * \file libav_decoder Jpeg/Mpeg decoder
+ * \file libav_decoder.h @brief Jpeg/Mpeg decoder
  */
 // Created by amourao on 12-09-2019.
 #pragma once
@@ -32,17 +32,34 @@ extern "C" {
 
 namespace moetsi::ssp {
 
+/**
+ * @brief AV (Jpeg/Mpeg) decoder
+ */
 class LibAvDecoder : public IDecoder {
 private:
-
   AVCodecSafeP codec_;
   AVCodecContextSafeP codec_context_;
-
 public:
+  /** @brief constructor */
   LibAvDecoder();
+  /** @brief destructor */
   ~LibAvDecoder();
+  /**
+   *  @brief Initialize. 
+   *  \param codec_parameters parameters
+   */  
   void Init(AVCodecParameters *codec_parameters);
+  /**
+   * @brief Extract an opencv image from a FrameStruct
+   * \param data FrameStruct
+   * \return OpenCV matrix/image
+   */  
   cv::Mat Decode(FrameStruct& frame_struct);
+  /**
+   * @brief Decode frame to libav AVFrame structure
+   * \param frame_struct SSP FrameStruct
+   * \return Libav AVFrame structure
+   */
   AVFrameSharedP DecodeFrame(FrameStruct &frame_struct);
 };
 

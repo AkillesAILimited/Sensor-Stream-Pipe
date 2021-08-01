@@ -1,5 +1,10 @@
 \hypertarget{similarity__measures_8h}{}\section{similarity\+\_\+measures.\+h File Reference}
 \label{similarity__measures_8h}\index{similarity\+\_\+measures.\+h@{similarity\+\_\+measures.\+h}}
+
+
+Similarity measures.  
+
+
 {\ttfamily \#include $<$opencv2/core/mat.\+hpp$>$}\newline
 {\ttfamily \#include $<$opencv2/highgui.\+hpp$>$}\newline
 Include dependency graph for similarity\+\_\+measures.\+h\+:\nopagebreak
@@ -25,12 +30,13 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 double \hyperlink{namespacemoetsi_1_1ssp_a0290f5110cb2cd2c9327c2fa6a528c84}{moetsi\+::ssp\+::\+Get\+P\+S\+NR} (const Mat \&I1, const Mat \&I2, double max\+\_\+value)
-\item 
+\begin{DoxyCompactList}\small\item\em Get Peak Signal to Noise Ration similarity. \end{DoxyCompactList}\item 
 double \hyperlink{namespacemoetsi_1_1ssp_a3c49338af0ef5d208a34718fe29fc693}{moetsi\+::ssp\+::\+Get\+M\+SE} (const Mat \&I1, const Mat \&I2)
-\item 
+\begin{DoxyCompactList}\small\item\em Get Mean Square Error (distance) between images. \end{DoxyCompactList}\item 
 Scalar \hyperlink{namespacemoetsi_1_1ssp_ae44d43d11d27495335b5494d0cff7601}{moetsi\+::ssp\+::\+Get\+M\+S\+S\+IM} (const Mat \&i1, const Mat \&i2)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get Structural Similarity between 2 images cf. for instance \href{http://amroamroamro.github.io/mexopencv/opencv/image_similarity_demo.html}{\tt http\+://amroamroamro.\+github.\+io/mexopencv/opencv/image\+\_\+similarity\+\_\+demo.\+html} for a simple S\+S\+IM introduction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Similarity measures 
+Similarity measures. 
+

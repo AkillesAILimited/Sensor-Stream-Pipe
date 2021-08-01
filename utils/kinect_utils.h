@@ -1,5 +1,5 @@
 /**
- * \file kinect_utils.h Utils for Kinect RT integration
+ * \file kinect_utils.h @brief Utils for Kinect RT integration
  */
 // Created by amourao on 02/09/19.
 #pragma once
@@ -23,7 +23,7 @@
 namespace moetsi::ssp {
 
 /**
- * Azure Kinect configuration
+ * @brief Azure Kinect configuration
  */
 struct ExtendedAzureConfig {
   /**
@@ -49,14 +49,14 @@ struct ExtendedAzureConfig {
 };
 
 /**
- * Build Kinect configuration from YAML configuration
+ * @brief Build Kinect configuration from YAML configuration
  * \param config yaml confirguration
  * \return Azure Kinect configuration
  */
 ExtendedAzureConfig BuildKinectConfigFromYAML(YAML::Node config);
 
 /**
- * Transform frame structure to K4A format
+ * @brief Transform frame structure to K4A format
  * Update decoder dictionary
  * \param f source frame structure
  * \param sensor_capture destination "capture" structure

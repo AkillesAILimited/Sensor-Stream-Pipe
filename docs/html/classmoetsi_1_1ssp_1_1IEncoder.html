@@ -72,110 +72,80 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> abstract encoder class.  
+ <a href="classmoetsi_1_1ssp_1_1IEncoder.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="encoders_2iencoder_8h_source.html">iencoder.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for moetsi::ssp::IEncoder:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmoetsi_1_1ssp_1_1IEncoder__inherit__graph.png" border="0" usemap="#moetsi_1_1ssp_1_1IEncoder_inherit__map" alt="Inheritance graph"/></div>
 <map name="moetsi_1_1ssp_1_1IEncoder_inherit__map" id="moetsi_1_1ssp_1_1IEncoder_inherit__map">
-<area shape="rect" id="node2" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html" title="moetsi::ssp::LibAvEncoder" alt="" coords="209,5,388,32"/>
-<area shape="rect" id="node3" href="classmoetsi_1_1ssp_1_1NullEncoder.html" title="moetsi::ssp::NullEncoder" alt="" coords="214,56,383,83"/>
-<area shape="rect" id="node4" href="classmoetsi_1_1ssp_1_1NvEncoder.html" title="moetsi::ssp::NvEncoder" alt="" coords="217,107,380,133"/>
-<area shape="rect" id="node5" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html" title="moetsi::ssp::ZDepthEncoder" alt="" coords="204,157,393,184"/>
+<area shape="rect" id="node2" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html" title="LibAV encoder for Jpeg/Mpeg. " alt="" coords="209,5,388,32"/>
+<area shape="rect" id="node3" href="classmoetsi_1_1ssp_1_1NullEncoder.html" title="Nullencoder Straight pipe encoder. " alt="" coords="214,56,383,83"/>
+<area shape="rect" id="node4" href="classmoetsi_1_1ssp_1_1NvEncoder.html" title="NvPipe encoder. " alt="" coords="217,107,380,133"/>
+<area shape="rect" id="node5" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html" title="ZDepth encoder. " alt="" coords="204,157,393,184"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c19808ebe6a05dbce630c45188b9346"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a6c19808ebe6a05dbce630c45188b9346">~IEncoder</a> ()</td></tr>
+<tr class="memitem:a6c19808ebe6a05dbce630c45188b9346"><td class="memItemLeft" align="right" valign="top"><a id="a6c19808ebe6a05dbce630c45188b9346"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a6c19808ebe6a05dbce630c45188b9346">~IEncoder</a> ()</td></tr>
+<tr class="memdesc:a6c19808ebe6a05dbce630c45188b9346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
 <tr class="separator:a6c19808ebe6a05dbce630c45188b9346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c223ec82fdd30ee8ee75157306054ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a8c223ec82fdd30ee8ee75157306054ec">AddFrameStruct</a> (std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt; &amp;frame_struct)=0</td></tr>
+<tr class="memdesc:a8c223ec82fdd30ee8ee75157306054ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a frame struct.  <a href="#a8c223ec82fdd30ee8ee75157306054ec">More...</a><br /></td></tr>
 <tr class="separator:a8c223ec82fdd30ee8ee75157306054ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274">NextPacket</a> ()=0</td></tr>
+<tr class="memitem:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memItemLeft" align="right" valign="top"><a id="afac3ddcf2f49be16020c83cb9e0fb274"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274">NextPacket</a> ()=0</td></tr>
+<tr class="memdesc:afac3ddcf2f49be16020c83cb9e0fb274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go to next packet. <br /></td></tr>
 <tr class="separator:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af8e23d841ef61f6ee4037e56a3694d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a2af8e23d841ef61f6ee4037e56a3694d">HasNextPacket</a> ()=0</td></tr>
+<tr class="memdesc:a2af8e23d841ef61f6ee4037e56a3694d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a next packet.  <a href="#a2af8e23d841ef61f6ee4037e56a3694d">More...</a><br /></td></tr>
 <tr class="separator:a2af8e23d841ef61f6ee4037e56a3694d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178d117518e7c7007414ea9c82bd3ed6"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a178d117518e7c7007414ea9c82bd3ed6">CurrentFrameEncoded</a> ()=0</td></tr>
+<tr class="memdesc:a178d117518e7c7007414ea9c82bd3ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current encoded frame.  <a href="#a178d117518e7c7007414ea9c82bd3ed6">More...</a><br /></td></tr>
 <tr class="separator:a178d117518e7c7007414ea9c82bd3ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60bdaae0a85289dfa31a12bab533dc0"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ab60bdaae0a85289dfa31a12bab533dc0">CurrentFrameOriginal</a> ()=0</td></tr>
+<tr class="memdesc:ab60bdaae0a85289dfa31a12bab533dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current frame in its original format.  <a href="#ab60bdaae0a85289dfa31a12bab533dc0">More...</a><br /></td></tr>
 <tr class="separator:ab60bdaae0a85289dfa31a12bab533dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5179efaa4c74207766dd64f46f4059a"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1CodecParamsStruct.html">CodecParamsStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ad5179efaa4c74207766dd64f46f4059a">GetCodecParamsStruct</a> ()=0</td></tr>
+<tr class="memdesc:ad5179efaa4c74207766dd64f46f4059a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get codec parameters.  <a href="#ad5179efaa4c74207766dd64f46f4059a">More...</a><br /></td></tr>
 <tr class="separator:ad5179efaa4c74207766dd64f46f4059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a865aa52230d81aed1cb5232402f6c"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ae6a865aa52230d81aed1cb5232402f6c">GetFps</a> ()=0</td></tr>
+<tr class="memdesc:ae6a865aa52230d81aed1cb5232402f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get FPS.  <a href="#ae6a865aa52230d81aed1cb5232402f6c">More...</a><br /></td></tr>
 <tr class="separator:ae6a865aa52230d81aed1cb5232402f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c19808ebe6a05dbce630c45188b9346"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a6c19808ebe6a05dbce630c45188b9346">~IEncoder</a> ()</td></tr>
+<tr class="memitem:a6c19808ebe6a05dbce630c45188b9346"><td class="memItemLeft" align="right" valign="top"><a id="a6c19808ebe6a05dbce630c45188b9346"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a6c19808ebe6a05dbce630c45188b9346">~IEncoder</a> ()</td></tr>
+<tr class="memdesc:a6c19808ebe6a05dbce630c45188b9346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
 <tr class="separator:a6c19808ebe6a05dbce630c45188b9346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c223ec82fdd30ee8ee75157306054ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a8c223ec82fdd30ee8ee75157306054ec">AddFrameStruct</a> (std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt; &amp;frame_struct)=0</td></tr>
+<tr class="memdesc:a8c223ec82fdd30ee8ee75157306054ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a frame struct.  <a href="#a8c223ec82fdd30ee8ee75157306054ec">More...</a><br /></td></tr>
 <tr class="separator:a8c223ec82fdd30ee8ee75157306054ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274">NextPacket</a> ()=0</td></tr>
+<tr class="memitem:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memItemLeft" align="right" valign="top"><a id="afac3ddcf2f49be16020c83cb9e0fb274"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#afac3ddcf2f49be16020c83cb9e0fb274">NextPacket</a> ()=0</td></tr>
+<tr class="memdesc:afac3ddcf2f49be16020c83cb9e0fb274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go to next packet. <br /></td></tr>
 <tr class="separator:afac3ddcf2f49be16020c83cb9e0fb274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af8e23d841ef61f6ee4037e56a3694d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a2af8e23d841ef61f6ee4037e56a3694d">HasNextPacket</a> ()=0</td></tr>
+<tr class="memdesc:a2af8e23d841ef61f6ee4037e56a3694d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a next packet.  <a href="#a2af8e23d841ef61f6ee4037e56a3694d">More...</a><br /></td></tr>
 <tr class="separator:a2af8e23d841ef61f6ee4037e56a3694d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178d117518e7c7007414ea9c82bd3ed6"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#a178d117518e7c7007414ea9c82bd3ed6">CurrentFrameEncoded</a> ()=0</td></tr>
+<tr class="memdesc:a178d117518e7c7007414ea9c82bd3ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current encoded frame.  <a href="#a178d117518e7c7007414ea9c82bd3ed6">More...</a><br /></td></tr>
 <tr class="separator:a178d117518e7c7007414ea9c82bd3ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60bdaae0a85289dfa31a12bab533dc0"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ab60bdaae0a85289dfa31a12bab533dc0">CurrentFrameOriginal</a> ()=0</td></tr>
+<tr class="memdesc:ab60bdaae0a85289dfa31a12bab533dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current frame in its original format.  <a href="#ab60bdaae0a85289dfa31a12bab533dc0">More...</a><br /></td></tr>
 <tr class="separator:ab60bdaae0a85289dfa31a12bab533dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5179efaa4c74207766dd64f46f4059a"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="structmoetsi_1_1ssp_1_1CodecParamsStruct.html">CodecParamsStruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ad5179efaa4c74207766dd64f46f4059a">GetCodecParamsStruct</a> ()=0</td></tr>
+<tr class="memdesc:ad5179efaa4c74207766dd64f46f4059a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get codec parameters.  <a href="#ad5179efaa4c74207766dd64f46f4059a">More...</a><br /></td></tr>
 <tr class="separator:ad5179efaa4c74207766dd64f46f4059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a865aa52230d81aed1cb5232402f6c"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html#ae6a865aa52230d81aed1cb5232402f6c">GetFps</a> ()=0</td></tr>
+<tr class="memdesc:ae6a865aa52230d81aed1cb5232402f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get FPS.  <a href="#ae6a865aa52230d81aed1cb5232402f6c">More...</a><br /></td></tr>
 <tr class="separator:ae6a865aa52230d81aed1cb5232402f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html">IEncoder</a> abstract encoder class </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6c19808ebe6a05dbce630c45188b9346"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c19808ebe6a05dbce630c45188b9346">&#9670;&nbsp;</a></span>~IEncoder() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual moetsi::ssp::IEncoder::~IEncoder </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Virtual destructor </p>
-
-</div>
-</div>
-<a id="a6c19808ebe6a05dbce630c45188b9346"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c19808ebe6a05dbce630c45188b9346">&#9670;&nbsp;</a></span>~IEncoder() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual moetsi::ssp::IEncoder::~IEncoder </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Virtual destructor </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> abstract encoder class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8c223ec82fdd30ee8ee75157306054ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c223ec82fdd30ee8ee75157306054ec">&#9670;&nbsp;</a></span>AddFrameStruct() <span class="overload">[1/2]</span></h2>
 
@@ -199,14 +169,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Add a frame struct </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Add a frame struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame_struct</td><td><a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> to add </td></tr>
+    <tr><td class="paramname">frame_struct</td><td><a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html" title="Frame struct: SSP frame. ">FrameStruct</a> to add </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#acd321dd52800b23b383b2e9489118009">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#ac3b65f82f9f4cc07ae20b7dea81fa489">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#aaacd9d8c4086d615e2a0254130787404">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#afb703c45a8d4c58f650decabb18f357b">moetsi::ssp::NullEncoder</a>.</p>
+<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a931327f154e0da63fdfed73cf317d688">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a99fbcbd5f04c5b3b395167badbf84b2f">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a382e94eab7789cb4437b9711e5292343">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a05f90c640c372d00f45173ec3e9436be">moetsi::ssp::NullEncoder</a>.</p>
 
 </div>
 </div>
@@ -233,14 +205,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Add a frame struct </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Add a frame struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame_struct</td><td><a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html">FrameStruct</a> to add </td></tr>
+    <tr><td class="paramname">frame_struct</td><td><a class="el" href="structmoetsi_1_1ssp_1_1FrameStruct.html" title="Frame struct: SSP frame. ">FrameStruct</a> to add </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#acd321dd52800b23b383b2e9489118009">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#ac3b65f82f9f4cc07ae20b7dea81fa489">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#aaacd9d8c4086d615e2a0254130787404">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#afb703c45a8d4c58f650decabb18f357b">moetsi::ssp::NullEncoder</a>.</p>
+<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a931327f154e0da63fdfed73cf317d688">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a99fbcbd5f04c5b3b395167badbf84b2f">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a382e94eab7789cb4437b9711e5292343">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a05f90c640c372d00f45173ec3e9436be">moetsi::ssp::NullEncoder</a>.</p>
 
 </div>
 </div>
@@ -266,7 +240,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current encoded frame </p><dl class="section return"><dt>Returns</dt><dd>current encoded frame </dd></dl>
+
+<p>Get current encoded frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>current encoded frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#aedb37703d73b55f1389a122d2ecbe923">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#adbc7d498e797af8c5bb31b5a2a82efdd">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a075752f62bbc40f71026812c5548ef5f">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ae48926f99c368849ee8822aed10ac1b5">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -294,7 +270,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current encoded frame </p><dl class="section return"><dt>Returns</dt><dd>current encoded frame </dd></dl>
+
+<p>Get current encoded frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>current encoded frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#aedb37703d73b55f1389a122d2ecbe923">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#adbc7d498e797af8c5bb31b5a2a82efdd">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a075752f62bbc40f71026812c5548ef5f">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ae48926f99c368849ee8822aed10ac1b5">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -322,7 +300,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current frame in its original format </p><dl class="section return"><dt>Returns</dt><dd>current frame in its original format </dd></dl>
+
+<p>Get current frame in its original format. </p>
+<dl class="section return"><dt>Returns</dt><dd>current frame in its original format </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a249c65ad557f438d6856e875f01a1947">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a56baf331eae448da89ee54b69fec170c">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#abe5820ee0dea5fec22e398a7ba4d6777">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ad972dfdb93d2f609cdc885c53079ede2">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -350,7 +330,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current frame in its original format </p><dl class="section return"><dt>Returns</dt><dd>current frame in its original format </dd></dl>
+
+<p>Get current frame in its original format. </p>
+<dl class="section return"><dt>Returns</dt><dd>current frame in its original format </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a249c65ad557f438d6856e875f01a1947">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a56baf331eae448da89ee54b69fec170c">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#abe5820ee0dea5fec22e398a7ba4d6777">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ad972dfdb93d2f609cdc885c53079ede2">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -378,7 +360,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get codec parameters </p><dl class="section return"><dt>Returns</dt><dd>codec parameters </dd></dl>
+
+<p>Get codec parameters. </p>
+<dl class="section return"><dt>Returns</dt><dd>codec parameters </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a2ff6afafbb5da48e900d34d70a46d00c">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#aa6229a43b12d2f27e27f518fc2229b61">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a3fc9f84387dba09d1deb4761031b598f">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a29839bd02ad42ecd9cf8e6cce707a9fe">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -406,7 +390,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get codec parameters </p><dl class="section return"><dt>Returns</dt><dd>codec parameters </dd></dl>
+
+<p>Get codec parameters. </p>
+<dl class="section return"><dt>Returns</dt><dd>codec parameters </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a2ff6afafbb5da48e900d34d70a46d00c">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#aa6229a43b12d2f27e27f518fc2229b61">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a3fc9f84387dba09d1deb4761031b598f">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a29839bd02ad42ecd9cf8e6cce707a9fe">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -434,7 +420,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get FPS </p><dl class="section return"><dt>Returns</dt><dd>FPS in frame per second </dd></dl>
+
+<p>Get FPS. </p>
+<dl class="section return"><dt>Returns</dt><dd>FPS in frame per second </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#ae21f81cb967359132183a29e04307933">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#ab94b826f2aef05afad376132743001d9">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a9ea0a5783d7d265fccc3a2c262600552">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ad6727fa08528622081aa4eca4aacc6c1">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -462,7 +450,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get FPS </p><dl class="section return"><dt>Returns</dt><dd>FPS in frame per second </dd></dl>
+
+<p>Get FPS. </p>
+<dl class="section return"><dt>Returns</dt><dd>FPS in frame per second </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#ae21f81cb967359132183a29e04307933">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#ab94b826f2aef05afad376132743001d9">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#a9ea0a5783d7d265fccc3a2c262600552">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#ad6727fa08528622081aa4eca4aacc6c1">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -490,7 +480,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if there is a next packet </p><dl class="section return"><dt>Returns</dt><dd>true if there is a next packet </dd></dl>
+
+<p>Check if there is a next packet. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a next packet </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a306c0935fa37bd35ddfeb8290289e927">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a4c0874d9d0d767ae7a33fe9c9a1be1de">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#ac11aa1369150c2aa5ffa1d70d4e6ad5d">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a359eb668c16a1ef7963214f7f6303af4">moetsi::ssp::NullEncoder</a>.</p>
 
@@ -518,65 +510,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if there is a next packet </p><dl class="section return"><dt>Returns</dt><dd>true if there is a next packet </dd></dl>
+
+<p>Check if there is a next packet. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a next packet </dd></dl>
 
 <p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#a306c0935fa37bd35ddfeb8290289e927">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a4c0874d9d0d767ae7a33fe9c9a1be1de">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#ac11aa1369150c2aa5ffa1d70d4e6ad5d">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a359eb668c16a1ef7963214f7f6303af4">moetsi::ssp::NullEncoder</a>.</p>
-
-</div>
-</div>
-<a id="afac3ddcf2f49be16020c83cb9e0fb274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afac3ddcf2f49be16020c83cb9e0fb274">&#9670;&nbsp;</a></span>NextPacket() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void moetsi::ssp::IEncoder::NextPacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Go to next packet </p>
-
-<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#acf5e6e2f172d24778c7942c8cd37330b">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a1c6d801fbb40e7dea2b33dd2ac154919">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#ae3911f396fc8b86c04c94dc71e1c0672">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a5fe7215f2b462690208b2a144e962e14">moetsi::ssp::NullEncoder</a>.</p>
-
-</div>
-</div>
-<a id="afac3ddcf2f49be16020c83cb9e0fb274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afac3ddcf2f49be16020c83cb9e0fb274">&#9670;&nbsp;</a></span>NextPacket() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void moetsi::ssp::IEncoder::NextPacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Go to next packet </p>
-
-<p>Implemented in <a class="el" href="classmoetsi_1_1ssp_1_1LibAvEncoder.html#acf5e6e2f172d24778c7942c8cd37330b">moetsi::ssp::LibAvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1NvEncoder.html#a1c6d801fbb40e7dea2b33dd2ac154919">moetsi::ssp::NvEncoder</a>, <a class="el" href="classmoetsi_1_1ssp_1_1ZDepthEncoder.html#ae3911f396fc8b86c04c94dc71e1c0672">moetsi::ssp::ZDepthEncoder</a>, and <a class="el" href="classmoetsi_1_1ssp_1_1NullEncoder.html#a5fe7215f2b462690208b2a144e962e14">moetsi::ssp::NullEncoder</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,5 @@
 /**
- * \file zdepth_encoder.h ZDepth encoder
+ * \file zdepth_encoder.h ZDepth @brief encoder
  */
 // Created by amourao on 23-09-2019.
 #pragma once
@@ -14,6 +14,9 @@
 
 namespace moetsi::ssp {
 
+/**
+ * @brief ZDepth encoder 
+ */
 class ZDepthEncoder: public IEncoder {
 private:
   std::shared_ptr<FrameStruct> frame_original_;
@@ -32,24 +35,58 @@ private:
   std::string stream_id_;
 
 public:
+  /**
+   * @brief Constructor
+   * \param _codec_parameters
+   * \param _fps Frame per second
+   */
   ZDepthEncoder(YAML::Node& _codec_parameters, int _fps);
 
+  /**
+   * @brief Destructor
+   */
   ~ZDepthEncoder();
 
-  void AddFrameStruct(std::shared_ptr<FrameStruct> &fs);
+  /** 
+   * @brief Add a frame struct
+   * \param frame_struct FrameStruct to add
+   */
+  virtual void AddFrameStruct(std::shared_ptr<FrameStruct> &frame_struct);
 
-  void NextPacket();
+  /**
+   * @brief Go to next packet
+   */
+  virtual void NextPacket();
 
-  bool HasNextPacket();
+  /**
+   * @brief Check if there is a next packet
+   * \return true if there is a next packet
+   */
+  virtual bool HasNextPacket();
 
-  std::shared_ptr<FrameStruct> CurrentFrameEncoded();
+  /**
+   * @brief Get current encoded frame
+   * \return current encoded frame
+   */
+  virtual std::shared_ptr<FrameStruct> CurrentFrameEncoded();
 
-  std::shared_ptr<FrameStruct> CurrentFrameOriginal();
+  /**
+   * @brief Get current frame in its original format 
+   * \return current frame in its original format
+   */
+  virtual std::shared_ptr<FrameStruct> CurrentFrameOriginal();
 
-  std::shared_ptr<CodecParamsStruct> GetCodecParamsStruct();
+  /**
+   * @brief Get codec parameters
+   * \return codec parameters
+   */
+  virtual std::shared_ptr<CodecParamsStruct> GetCodecParamsStruct();
 
-  unsigned int GetFps();
-
+  /**
+   * @brief Get FPS
+   * \return FPS in frame per second
+   */
+  virtual unsigned int GetFps();
 };
 
 } // namespace moetsi::ssp

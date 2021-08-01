@@ -2,6 +2,15 @@
 \label{classmoetsi_1_1ssp_1_1NullEncoder}\index{moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}}
 
 
+Nullencoder Straight pipe encoder.  
+
+
+
+
+{\ttfamily \#include $<$null\+\_\+encoder.\+h$>$}
+
+
+
 Inheritance diagram for moetsi\+:\+:ssp\+:\+:Null\+Encoder\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,33 +30,61 @@ Collaboration diagram for moetsi\+:\+:ssp\+:\+:Null\+Encoder\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_aaae4b8ed8b56ae9526f04853b56d1650}{Null\+Encoder} (int \+\_\+fps)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_a503705e0c63e88d583cf587de8d21b78}\label{classmoetsi_1_1ssp_1_1NullEncoder_a503705e0c63e88d583cf587de8d21b78}} 
+virtual \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a503705e0c63e88d583cf587de8d21b78}{$\sim$\+Null\+Encoder} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a05f90c640c372d00f45173ec3e9436be}{Add\+Frame\+Struct} (std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \&frame\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Add a frame struct. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}\label{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}} 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}{Next\+Packet} ()
+\begin{DoxyCompactList}\small\item\em Go to next packet. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a359eb668c16a1ef7963214f7f6303af4}{Has\+Next\+Packet} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a next packet. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ae48926f99c368849ee8822aed10ac1b5}{Current\+Frame\+Encoded} ()
+\begin{DoxyCompactList}\small\item\em Get current encoded frame. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ad972dfdb93d2f609cdc885c53079ede2}{Current\+Frame\+Original} ()
+\begin{DoxyCompactList}\small\item\em Get current frame in its original format. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1CodecParamsStruct}{Codec\+Params\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a29839bd02ad42ecd9cf8e6cce707a9fe}{Get\+Codec\+Params\+Struct} ()
+\begin{DoxyCompactList}\small\item\em Get codec parameters. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ad6727fa08528622081aa4eca4aacc6c1}{Get\+Fps} ()
+\begin{DoxyCompactList}\small\item\em Get F\+PS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Nullencoder Straight pipe encoder. 
+
+\subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_aaae4b8ed8b56ae9526f04853b56d1650}\label{classmoetsi_1_1ssp_1_1NullEncoder_aaae4b8ed8b56ae9526f04853b56d1650}} 
-{\bfseries Null\+Encoder} (int \+\_\+fps)
-\item 
-void \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_afb703c45a8d4c58f650decabb18f357b}{Add\+Frame\+Struct} (std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \&fs)
-\item 
-void \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}{Next\+Packet} ()
-\item 
-bool \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a359eb668c16a1ef7963214f7f6303af4}{Has\+Next\+Packet} ()
-\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ae48926f99c368849ee8822aed10ac1b5}{Current\+Frame\+Encoded} ()
-\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ad972dfdb93d2f609cdc885c53079ede2}{Current\+Frame\+Original} ()
-\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1CodecParamsStruct}{Codec\+Params\+Struct} $>$ \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_a29839bd02ad42ecd9cf8e6cce707a9fe}{Get\+Codec\+Params\+Struct} ()
-\item 
-unsigned int \hyperlink{classmoetsi_1_1ssp_1_1NullEncoder_ad6727fa08528622081aa4eca4aacc6c1}{Get\+Fps} ()
-\end{DoxyCompactItemize}
+\index{moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}!Null\+Encoder@{Null\+Encoder}}
+\index{Null\+Encoder@{Null\+Encoder}!moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}}
+\subsubsection{\texorpdfstring{Null\+Encoder()}{NullEncoder()}}
+{\footnotesize\ttfamily moetsi\+::ssp\+::\+Null\+Encoder\+::\+Null\+Encoder (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fps }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fps} & frame per seconds \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_afb703c45a8d4c58f650decabb18f357b}\label{classmoetsi_1_1ssp_1_1NullEncoder_afb703c45a8d4c58f650decabb18f357b}} 
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_a05f90c640c372d00f45173ec3e9436be}\label{classmoetsi_1_1ssp_1_1NullEncoder_a05f90c640c372d00f45173ec3e9436be}} 
 \index{moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}!Add\+Frame\+Struct@{Add\+Frame\+Struct}}
 \index{Add\+Frame\+Struct@{Add\+Frame\+Struct}!moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}}
 \subsubsection{\texorpdfstring{Add\+Frame\+Struct()}{AddFrameStruct()}}
 {\footnotesize\ttfamily void moetsi\+::ssp\+::\+Null\+Encoder\+::\+Add\+Frame\+Struct (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ \&}]{frame\+\_\+struct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Add a frame struct 
+
+
+Add a frame struct. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em frame\+\_\+struct} & \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} to add \\
 \hline
@@ -62,7 +99,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_a8c223ec82fdd30ee8ee7515730
 \subsubsection{\texorpdfstring{Current\+Frame\+Encoded()}{CurrentFrameEncoded()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ moetsi\+::ssp\+::\+Null\+Encoder\+::\+Current\+Frame\+Encoded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get current encoded frame \begin{DoxyReturn}{Returns}
+
+
+Get current encoded frame. 
+
+\begin{DoxyReturn}{Returns}
 current encoded frame 
 \end{DoxyReturn}
 
@@ -75,7 +116,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_a178d117518e7c7007414ea9c82
 \subsubsection{\texorpdfstring{Current\+Frame\+Original()}{CurrentFrameOriginal()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ moetsi\+::ssp\+::\+Null\+Encoder\+::\+Current\+Frame\+Original (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get current frame in its original format \begin{DoxyReturn}{Returns}
+
+
+Get current frame in its original format. 
+
+\begin{DoxyReturn}{Returns}
 current frame in its original format 
 \end{DoxyReturn}
 
@@ -88,7 +133,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_ab60bdaae0a85289dfa31a12bab
 \subsubsection{\texorpdfstring{Get\+Codec\+Params\+Struct()}{GetCodecParamsStruct()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1CodecParamsStruct}{Codec\+Params\+Struct} $>$ moetsi\+::ssp\+::\+Null\+Encoder\+::\+Get\+Codec\+Params\+Struct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get codec parameters \begin{DoxyReturn}{Returns}
+
+
+Get codec parameters. 
+
+\begin{DoxyReturn}{Returns}
 codec parameters 
 \end{DoxyReturn}
 
@@ -101,7 +150,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_ad5179efaa4c74207766dd64f46
 \subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
 {\footnotesize\ttfamily unsigned int moetsi\+::ssp\+::\+Null\+Encoder\+::\+Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get F\+PS \begin{DoxyReturn}{Returns}
+
+
+Get F\+PS. 
+
+\begin{DoxyReturn}{Returns}
 F\+PS in frame per second 
 \end{DoxyReturn}
 
@@ -114,22 +167,16 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_ae6a865aa52230d81aed1cb5232
 \subsubsection{\texorpdfstring{Has\+Next\+Packet()}{HasNextPacket()}}
 {\footnotesize\ttfamily bool moetsi\+::ssp\+::\+Null\+Encoder\+::\+Has\+Next\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Check if there is a next packet \begin{DoxyReturn}{Returns}
+
+
+Check if there is a next packet. 
+
+\begin{DoxyReturn}{Returns}
 true if there is a next packet 
 \end{DoxyReturn}
 
 
 Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_a2af8e23d841ef61f6ee4037e56a3694d}{moetsi\+::ssp\+::\+I\+Encoder}.
-
-\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}\label{classmoetsi_1_1ssp_1_1NullEncoder_a5fe7215f2b462690208b2a144e962e14}} 
-\index{moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}!Next\+Packet@{Next\+Packet}}
-\index{Next\+Packet@{Next\+Packet}!moetsi\+::ssp\+::\+Null\+Encoder@{moetsi\+::ssp\+::\+Null\+Encoder}}
-\subsubsection{\texorpdfstring{Next\+Packet()}{NextPacket()}}
-{\footnotesize\ttfamily void moetsi\+::ssp\+::\+Null\+Encoder\+::\+Next\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Go to next packet 
-
-Implements \hyperlink{classmoetsi_1_1ssp_1_1IEncoder_afac3ddcf2f49be16020c83cb9e0fb274}{moetsi\+::ssp\+::\+I\+Encoder}.
 
 
 

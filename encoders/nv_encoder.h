@@ -1,5 +1,5 @@
 /**
- * \file nv_encoder.h NvPipe encoder
+ * \file nv_encoder.h @brief NvPipe encoder
  */
 // Created by amourao on 11-09-2019.
 #pragma once
@@ -20,6 +20,9 @@
 
 namespace moetsi::ssp {
 
+/**
+ * @brief NvPipe encoder
+ */
 class NvEncoder : public IEncoder {
 
 private:
@@ -45,23 +48,58 @@ private:
   void BuildEncoder(YAML::Node _codec_parameters);
 
 public:
+  /**
+   * @brief Constructor
+   * \param _codec_parameters Yaml parameters
+   * \param _fps Frame per second 
+   */
   NvEncoder(YAML::Node _codec_parameters, unsigned int _fps);
 
+  /**
+   * @brief Destructor
+   */
   ~NvEncoder();
 
-  void AddFrameStruct(std::shared_ptr<FrameStruct> &fs);
+  /** 
+   * @brief Add a frame struct
+   * \param frame_struct FrameStruct to add
+   */
+  virtual void AddFrameStruct(std::shared_ptr<FrameStruct> &frame_struct) = 0;
 
-  void NextPacket();
+  /**
+   * @brief Go to next packet
+   */
+  virtual void NextPacket();
 
-  bool HasNextPacket();
+  /**
+   * @brief Check if there is a next packet
+   * \return true if there is a next packet
+   */
+  virtual bool HasNextPacket();
 
-  std::shared_ptr<FrameStruct> CurrentFrameEncoded();
+  /**
+   * @brief Get current encoded frame
+   * \return current encoded frame
+   */
+  virtual std::shared_ptr<FrameStruct> CurrentFrameEncoded();
 
-  std::shared_ptr<FrameStruct> CurrentFrameOriginal();
+  /**
+   * @brief Get current frame in its original format 
+   * \return current frame in its original format
+   */
+  virtual std::shared_ptr<FrameStruct> CurrentFrameOriginal();
 
-  std::shared_ptr<CodecParamsStruct> GetCodecParamsStruct();
+  /**
+   * @brief Get codec parameters
+   * \return codec parameters
+   */
+  virtual std::shared_ptr<CodecParamsStruct> GetCodecParamsStruct();
 
-  unsigned int GetFps();
+  /**
+   * @brief Get FPS
+   * \return FPS in frame per second
+   */
+  virtual unsigned int GetFps();
 };
 
 } // namespace moetsi::ssp

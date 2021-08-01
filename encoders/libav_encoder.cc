@@ -1,5 +1,5 @@
 /**
- * \file libav_encoder.cc Jpef/Mpeg encoder
+ * \file libav_encoder.cc @brief Jpef/Mpeg encoder
  */
 // Created by amourao on 26-06-2019.
 #include "libav_encoder.h"

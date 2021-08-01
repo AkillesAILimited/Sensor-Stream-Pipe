@@ -1,5 +1,5 @@
 /**
- * \file Utils.cc Utilities
+ * \file Utils.cc @brief Utilities
  */
 // Created by amourao on 26-06-2019.
 #include "utils.h"

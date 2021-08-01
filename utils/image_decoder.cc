@@ -1,5 +1,5 @@
 /**
- * \file image_decoder mpeg/jpeg image decoder
+ * \file image_decoder.cc @brief mpeg/jpeg image decoder
  */
 // Created by amourao on 28/08/19.
 #include "image_decoder.h"

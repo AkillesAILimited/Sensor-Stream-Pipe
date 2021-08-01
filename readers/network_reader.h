@@ -1,5 +1,5 @@
 /**
- * \file network_reader.h Network reader
+ * \file network_reader.h @brief Network reader
  */
 // Created by amourao on 27-09-2019.
 #pragma once
@@ -12,6 +12,9 @@
 
 namespace moetsi::ssp {
 
+/**
+ * @brief Network reader
+ */
 class NetworkReader {
 
 private:

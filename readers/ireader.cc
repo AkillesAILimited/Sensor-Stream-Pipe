@@ -1,6 +1,6 @@
 
 /**
- * \file ireader.cc IReader factory
+ * \file ireader.cc @brief IReader factory
  */
 #include "ireader.h"
 #include "../utils/logger.h"

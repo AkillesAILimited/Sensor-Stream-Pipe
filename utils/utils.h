@@ -1,5 +1,5 @@
 /**
- * \file Utils.h Utilities
+ * \file utils.h @brief Utilities
  */
 
 // Created by amourao on 26-06-2019.
@@ -18,36 +18,36 @@
 namespace moetsi::ssp {
 
 /**
- * Get current time in ms.
+ * @brief Get current time in ms.
  * \return ms since UTC epoch
  */
 uint64_t _CurrentTimeMs();
 
 /**
- * Get current time in usec/microseconds.
+ * @brief Get current time in usec/microseconds.
  * \return usec since UTC epoch
  */
 uint64_t CurrentTimeUs();
 
 /**
- * Get current time in ns/nanosecconds
+ * @brief Get current time in ns/nanosecconds
  * \return nsec since UTC epoch
  */
 uint64_t CurrentTimeNs();
 
 /**
- * Build a random string
+ * @brief Build a random string
  */
 std::string RandomString(size_t length);
 
 /**
- * Setup SSP logging.
+ * @brief Setup SSP logging.
  * \param general_parameters configuration
  */
 void SetupLogging(YAML::Node &general_parameters);
 
 /**
- * Setup SSP logging.
+ * @brief Setup SSP logging.
  * \param level logging level
  * \param file log file
  */

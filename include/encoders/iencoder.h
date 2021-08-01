@@ -1,7 +1,16 @@
 /**
- * \file iencoder.h IEncoder definition: frame encoder
+ * \file iencoder.h @brief IEncoder definition: frame encoder
  */
 // Created by amourao on 12-09-2019.
+
+// Extra annotations
+/**
+ * \file encoders/iencoder.h @brief IEncoder factory
+ */
+/**
+ * \file include/encoders/iencoder.h @brief IEncoder factory
+ */
+
 #pragma once
 
 #include "../structs/frame_struct.h"
@@ -9,58 +18,58 @@
 namespace moetsi::ssp {
 
 /**
- * IEncoder abstract encoder class 
+ * @brief IEncoder abstract encoder class 
  */
 class IEncoder {
 
 public:
-  /** Virtual destructor */
+  /** @brief Virtual destructor */
   virtual ~IEncoder() {}
 
   /** 
-   * Add a frame struct
+   * @brief Add a frame struct
    * \param frame_struct FrameStruct to add
    */
   virtual void AddFrameStruct(std::shared_ptr<FrameStruct> &frame_struct) = 0;
 
   /**
-   * Go to next packet
+   * @brief Go to next packet
    */
   virtual void NextPacket() = 0;
 
   /**
-   * Check if there is a next packet
+   * @brief Check if there is a next packet
    * \return true if there is a next packet
    */
   virtual bool HasNextPacket() = 0;
 
   /**
-   * Get current encoded frame
+   * @brief Get current encoded frame
    * \return current encoded frame
    */
   virtual std::shared_ptr<FrameStruct> CurrentFrameEncoded() = 0;
 
   /**
-   * Get current frame in its original format 
+   * @brief Get current frame in its original format 
    * \return current frame in its original format
    */
   virtual std::shared_ptr<FrameStruct> CurrentFrameOriginal() = 0;
 
   /**
-   * Get codec parameters
+   * @brief Get codec parameters
    * \return codec parameters
    */
   virtual std::shared_ptr<CodecParamsStruct> GetCodecParamsStruct() = 0;
 
   /**
-   * Get FPS
+   * @brief Get FPS
    * \return FPS in frame per second
    */
   virtual unsigned int GetFps() = 0;
 };
 
 /**
- * IEncoder factory
+ * @brief IEncoder factory
  * \param config configuration
  * \return IEncoder instance
  */

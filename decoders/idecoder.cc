@@ -1,3 +1,6 @@
+/**
+ * \file idecoder.cc @brief IDecoder factory
+ */
 #include "idecoder.h"
 
 namespace moetsi::ssp {

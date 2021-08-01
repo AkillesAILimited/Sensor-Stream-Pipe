@@ -1,5 +1,5 @@
 /**
- * \file libav_decoder.cc Jpeg/Mpeg decoder
+ * \file libav_decoder.cc @brief Jpeg/Mpeg decoder
  */ 
 // Created by amourao on 12-09-2019.
 

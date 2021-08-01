@@ -1,5 +1,5 @@
 /**
- * \file kinect_utils.cc Utils for Kinect RT integration
+ * \file kinect_utils.cc @brief Utils for Kinect RT integration
  */
 // Created by amourao on 02/09/19.
 #include "kinect_utils.h"

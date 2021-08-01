@@ -1,6 +1,15 @@
 /**
- * \file idecoder.h Frame decoder interface
+ * \file idecoder.h @brief Frame decoder interface
  */
+
+// extra annotations
+/**
+ * \file decoders/idecoder.h @brief Frame decoder interface
+ */
+/**
+ * \file include/decoders/idecoder.h @brief Frame decoder interface
+ */
+
 // Created by amourao on 12-09-2019.
 #pragma once
 
@@ -10,21 +19,22 @@
 namespace moetsi::ssp {
 
 /**
- * IDecoder abstract decoder interface
+ * @brief IDecoder abstract decoder interface
  */
 class IDecoder {
 public:
-  /** Virtual destructor */
+  /** @brief Virtual destructor */
   virtual ~IDecoder() {}
   /**
-   * Extract an opencv image from a FrameStruct
-   * \input data FrameStruct
+   * @brief Extract an opencv image from a FrameStruct
+   * \param data FrameStruct
+   * \return OpenCV matrix/image
    */
   virtual cv::Mat Decode(FrameStruct& data) = 0;
 };
 
 /**
- * IDecoder factory.
+ * @brief IDecoder factory.
  * \param config configuration
  * \return IDecoder instance
  */

@@ -24,42 +24,39 @@ Collaboration diagram for moetsi\+:\+:ssp\+:\+:Image\+Reader\+:\nopagebreak
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_a8b64ab50c05bcf2179a7921fdb9baa29}\label{classmoetsi_1_1ssp_1_1ImageReader_a8b64ab50c05bcf2179a7921fdb9baa29}} 
 {\bfseries Image\+Reader} (std\+::string filename)
 \item 
-void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}{Reset} ()
-\item 
-void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a32eb88cc612e6920f4910e0803b0ce3c}{Go\+To\+Frame} (unsigned int frame\+\_\+id)
-\item 
-bool \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ad8e87720ca0ec97de501f1070119b28d}{Has\+Next\+Frame} ()
-\item 
-void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}{Next\+Frame} ()
-\item 
-std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ $>$ \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}{Get\+Current\+Frame} ()
-\item 
-unsigned int \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a386125736df9f25e5c4312bb679ff031}{Get\+Current\+Frame\+Id} ()
-\item 
-std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_af6f66957b6e3268c5336f4176c77fc73}{Get\+Type} ()
-\item 
-unsigned int \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a86adfec8106c366aaf1ec63e2a7da156}{Get\+Fps} ()
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}\label{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}} 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ $>$ \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}{Get\+Current\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Get current frame data. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_af6f66957b6e3268c5336f4176c77fc73}{Get\+Type} ()
+\begin{DoxyCompactList}\small\item\em Get frame types. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ad8e87720ca0ec97de501f1070119b28d}{Has\+Next\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a next frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}\label{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}} 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}{Next\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Go to next frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}\label{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}} 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}{Reset} ()
+\begin{DoxyCompactList}\small\item\em Reset this reader. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a32eb88cc612e6920f4910e0803b0ce3c}{Go\+To\+Frame} (unsigned int frame\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Go to a given frame. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a386125736df9f25e5c4312bb679ff031}{Get\+Current\+Frame\+Id} ()
+\begin{DoxyCompactList}\small\item\em Get current frame number. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a86adfec8106c366aaf1ec63e2a7da156}{Get\+Fps} ()
+\begin{DoxyCompactList}\small\item\em Get indicative F\+PS in frame per second. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}\label{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}} 
-\index{moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}!Get\+Current\+Frame@{Get\+Current\+Frame}}
-\index{Get\+Current\+Frame@{Get\+Current\+Frame}!moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Current\+Frame()}{GetCurrentFrame()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ $>$ moetsi\+::ssp\+::\+Image\+Reader\+::\+Get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Get current frame data 
-
-Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}{moetsi\+::ssp\+::\+I\+Reader}.
-
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_a386125736df9f25e5c4312bb679ff031}\label{classmoetsi_1_1ssp_1_1ImageReader_a386125736df9f25e5c4312bb679ff031}} 
 \index{moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}!Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}}
 \index{Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}!moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}}
 \subsubsection{\texorpdfstring{Get\+Current\+Frame\+Id()}{GetCurrentFrameId()}}
 {\footnotesize\ttfamily unsigned int moetsi\+::ssp\+::\+Image\+Reader\+::\+Get\+Current\+Frame\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get current frame number \begin{DoxyReturn}{Returns}
+
+
+Get current frame number. 
+
+\begin{DoxyReturn}{Returns}
 current frame number. 
 \end{DoxyReturn}
 
@@ -72,7 +69,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281
 \subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
 {\footnotesize\ttfamily unsigned int moetsi\+::ssp\+::\+Image\+Reader\+::\+Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get indicative F\+PS in frame per second. \begin{DoxyReturn}{Returns}
+
+
+Get indicative F\+PS in frame per second. 
+
+\begin{DoxyReturn}{Returns}
 the F\+PS number 
 \end{DoxyReturn}
 
@@ -85,7 +86,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eea
 \subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
 {\footnotesize\ttfamily std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ moetsi\+::ssp\+::\+Image\+Reader\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Get frame types \begin{DoxyReturn}{Returns}
+
+
+Get frame types. 
+
+\begin{DoxyReturn}{Returns}
 a vector of Frame\+Type, listing available data types 
 \end{DoxyReturn}
 
@@ -98,7 +103,11 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdc
 \subsubsection{\texorpdfstring{Go\+To\+Frame()}{GoToFrame()}}
 {\footnotesize\ttfamily void moetsi\+::ssp\+::\+Image\+Reader\+::\+Go\+To\+Frame (\begin{DoxyParamCaption}\item[{unsigned int}]{frame\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Go to a given frame 
+
+
+Go to a given frame. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em frame\+\_\+id} & target frame number \\
 \hline
@@ -113,32 +122,16 @@ Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd95
 \subsubsection{\texorpdfstring{Has\+Next\+Frame()}{HasNextFrame()}}
 {\footnotesize\ttfamily bool moetsi\+::ssp\+::\+Image\+Reader\+::\+Has\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Check if there is a next frame \begin{DoxyReturn}{Returns}
+
+
+Check if there is a next frame. 
+
+\begin{DoxyReturn}{Returns}
 true if there is a next frame 
 \end{DoxyReturn}
 
 
 Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}{moetsi\+::ssp\+::\+I\+Reader}.
-
-\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}\label{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}} 
-\index{moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}!Next\+Frame@{Next\+Frame}}
-\index{Next\+Frame@{Next\+Frame}!moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}}
-\subsubsection{\texorpdfstring{Next\+Frame()}{NextFrame()}}
-{\footnotesize\ttfamily void moetsi\+::ssp\+::\+Image\+Reader\+::\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Go to next frame 
-
-Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}{moetsi\+::ssp\+::\+I\+Reader}.
-
-\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}\label{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}} 
-\index{moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}!Reset@{Reset}}
-\index{Reset@{Reset}!moetsi\+::ssp\+::\+Image\+Reader@{moetsi\+::ssp\+::\+Image\+Reader}}
-\subsubsection{\texorpdfstring{Reset()}{Reset()}}
-{\footnotesize\ttfamily void moetsi\+::ssp\+::\+Image\+Reader\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Reset this reader 
-
-Implements \hyperlink{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}{moetsi\+::ssp\+::\+I\+Reader}.
 
 
 

@@ -1,5 +1,5 @@
 /**
- * \file image_reader.cc Image reader
+ * \file image_reader.cc @brief Image reader
  */
 // Created by amourao on 26-06-2019.
 #include "image_reader.h"

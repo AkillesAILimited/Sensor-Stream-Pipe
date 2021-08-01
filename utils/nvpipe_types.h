@@ -1,5 +1,5 @@
 /**
- * \file nvpipe_types.h Type for NVPipe support
+ * \file nvpipe_types.h @brief Types for NvPipe support
  */
 // Created by amourao on 28-10-2019.
 #pragma once

@@ -1,5 +1,5 @@
 /**
- * \file image_converter.cc Image converter from frame struct to opencv image
+ * \file image_converter.cc @brief Image converter from frame struct to opencv image
  */
 // Created by amourao on 28-10-2019.
 #include "image_converter.h"

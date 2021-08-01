@@ -1,5 +1,5 @@
 /**
- * \file ssp_server.cc SSP, server side.
+ * \file ssp_server.cc @brief SSP, server side.
  */
 // Created by amourao on 26-06-2019.
 

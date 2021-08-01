@@ -1,12 +1,12 @@
 <map id="zdepth_encoder.h" name="zdepth_encoder.h">
 <area shape="rect" id="node5" href="$encoders_2iencoder_8h_source.html" title="iencoder.h" alt="" coords="1753,80,1836,107"/>
-<area shape="rect" id="node22" href="$libav__decoder_8h_source.html" title="../decoders/libav_decoder.h" alt="" coords="1097,80,1279,107"/>
-<area shape="rect" id="node41" href="$image__decoder_8h.html" title="../utils/image_decoder.h" alt="" coords="2365,155,2526,181"/>
+<area shape="rect" id="node22" href="$libav__decoder_8h.html" title="Jpeg/Mpeg decoder. " alt="" coords="1097,80,1279,107"/>
+<area shape="rect" id="node41" href="$image__decoder_8h.html" title="AV Image decoder. " alt="" coords="2365,155,2526,181"/>
 <area shape="rect" id="node6" href="$structs_2frame__struct_8h_source.html" title="../structs/frame_struct.h" alt="" coords="1917,393,2080,420"/>
-<area shape="rect" id="node14" href="$utils_8h_source.html" title="../utils/utils.h" alt="" coords="2583,468,2681,495"/>
-<area shape="rect" id="node19" href="$logger_8h.html" title="logger.h" alt="" coords="1677,550,1745,577"/>
-<area shape="rect" id="node29" href="$video__utils_8h.html" title="../utils/video_utils.h" alt="" coords="1121,155,1255,181"/>
+<area shape="rect" id="node14" href="$utils_8h.html" title="Utilities. " alt="" coords="2583,468,2681,495"/>
+<area shape="rect" id="node19" href="$logger_8h.html" title="Logger header. " alt="" coords="1677,550,1745,577"/>
+<area shape="rect" id="node29" href="$video__utils_8h.html" title="Video utilities. " alt="" coords="1121,155,1255,181"/>
 <area shape="rect" id="node36" href="$decoders_2idecoder_8h_source.html" title="../decoders/idecoder.h" alt="" coords="491,319,642,345"/>
 <area shape="rect" id="node38" href="$libav__types_8h_source.html" title="../utils/libav_types.h" alt="" coords="1667,237,1805,263"/>
-<area shape="rect" id="node37" href="$zdepth__decoder_8h.html" title="../decoders/zdepth\l_decoder.h" alt="" coords="416,229,547,271"/>
+<area shape="rect" id="node37" href="$zdepth__decoder_8h.html" title="ZDepth decoder. " alt="" coords="416,229,547,271"/>
 </map>

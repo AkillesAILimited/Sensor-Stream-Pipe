@@ -1,5 +1,5 @@
 /**
- * \file frame_struct.h Frame struct definition. "Universal" frame data type.
+ * \file frame_struct.h @brief Frame struct definition. "Universal" frame data type.
  */
 // Created by amourao on 26-06-2019.
 #pragma once
@@ -18,7 +18,7 @@
 namespace moetsi::ssp {
 
 /**
- * Camera calibration type i.e. the kind of sensor calibration data present.
+ * @brief Camera calibration type i.e. the kind of sensor calibration data present.
  */ 
 enum class CameraCalibrationType: short {
     /** Default camera calibration type.  */
@@ -28,7 +28,7 @@ enum class CameraCalibrationType: short {
 };
 
 /**
- * Frame type: color, depth, IR as well as confidence matrices.
+ * @brief Frame type: color, depth, IR as well as confidence matrices.
  */ 
 enum class FrameType: short {
     /** Color/BGR frame type */
@@ -42,7 +42,7 @@ enum class FrameType: short {
 };
 
 /**
- * Codec parameters type. 
+ * @brief Codec parameters type. 
  */ 
 enum class CodecParamsType: short {
     /** Default type */
@@ -56,7 +56,7 @@ enum class CodecParamsType: short {
 };
 
 /**
- * SSP Message type. 
+ * @brief SSP Message type. 
  */ 
 enum class SSPMessageType: short {
     /** Default only */
@@ -64,7 +64,7 @@ enum class SSPMessageType: short {
 };
 
 /**
- * Frame data type. This is a precise binary format information.
+ * @brief Frame data type. This is a precise binary format information.
  */ 
 enum class FrameDataType: short {
     // 0 for image frames, 
@@ -109,7 +109,7 @@ enum class FrameDataType: short {
 }; 
 
 /**
- * Sensor type: color or depth
+ * @brief Sensor type: color or depth
  */ 
 enum class SensorType: short {
     // 0 for color, 1 for depth
@@ -128,7 +128,7 @@ enum class SensorType: short {
 };
 
 /**
- * Camera calibration data
+ * @brief Camera calibration data
  */
 struct CameraCalibrationStruct {
   // 0: Kinect parameters
@@ -168,7 +168,7 @@ struct CameraCalibrationStruct {
 };
 
 /**
- * Codec parameters
+ * @brief Codec parameters
  */
 struct CodecParamsStruct {
   // 0: av parameters, 1: nvPipe parameters, 2: zDepth parameters
@@ -206,7 +206,7 @@ struct CodecParamsStruct {
 };
 
 /**
- * Frame struct: SSP frame.
+ * @brief Frame struct: SSP frame.
  */ 
 struct FrameStruct {
 

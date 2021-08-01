@@ -1,5 +1,5 @@
 /**
- * \file network_reader.cc Network reader
+ * \file network_reader.cc @brief Network reader
  */
 // Created by amourao on 27-09-2019.
 

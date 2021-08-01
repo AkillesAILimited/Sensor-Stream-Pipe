@@ -1,5 +1,5 @@
 /**
- * \file zdepth_decoder.cc ZDepth decoder
+ * \file zdepth_decoder.cc @brief ZDepth decoder
  */
 // Created by amourao on 23-09-2019.
 
