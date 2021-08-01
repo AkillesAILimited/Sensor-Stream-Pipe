@@ -1,6 +1,8 @@
 #!/bin/bash
 
+rm -Rvf include
 mkdir include
+cp -fv ssp.h include
 mkdir include/decoders
 cp -fv decoders/idecoder.h include/decoders
 mkdir include/encoders

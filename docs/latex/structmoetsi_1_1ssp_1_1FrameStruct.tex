@@ -19,6 +19,9 @@ Collaboration diagram for moetsi\+:\+:ssp\+:\+:Frame\+Struct\+:
 \item 
 \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_af53f4e76978e2a4575b7cd661d30e01f}\label{structmoetsi_1_1ssp_1_1FrameStruct_af53f4e76978e2a4575b7cd661d30e01f}} 
 {\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar)
+\item 
+\mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_af53f4e76978e2a4575b7cd661d30e01f}\label{structmoetsi_1_1ssp_1_1FrameStruct_af53f4e76978e2a4575b7cd661d30e01f}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -31,7 +34,7 @@ Collaboration diagram for moetsi\+:\+:ssp\+:\+:Frame\+Struct\+:
 \item 
 std\+::string \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_a14a7976abfb26a9ca42e17555f8b1a8c}{stream\+\_\+id}
 \item 
-std\+::vector$<$ unsigned char $>$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_aded4a3fb94bc5aec4844cc9643b6a020}{frame}
+std\+::vector$<$ unsigned char $>$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_a7556ce8749c65cd5b22ea9c7a4c17619}{frame}
 \item 
 \hyperlink{structmoetsi_1_1ssp_1_1CodecParamsStruct}{Codec\+Params\+Struct} \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_a84ed01cb3227bcece29c43ba8ec322ee}{codec\+\_\+data}
 \item 
@@ -45,7 +48,7 @@ unsigned int \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_af3b1ea702009be5df748
 \item 
 unsigned int \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_aebc84f95b5024225412d92a56ddf24ad}{frame\+\_\+id}
 \item 
-std\+::vector$<$ uint64\+\_\+t $>$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_a8509ad9c47a69d44dc572e5500973fda}{timestamps}
+std\+::vector$<$ uint64\+\_\+t $>$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct_aa445729218d4963e527377d760ac8015}{timestamps}
 \end{DoxyCompactItemize}
 
 
@@ -71,11 +74,11 @@ Codec info for video frames, null for image frames Video decoder needs to know a
 \subsubsection{\texorpdfstring{device\+\_\+id}{device\_id}}
 {\footnotesize\ttfamily unsigned int moetsi\+::ssp\+::\+Frame\+Struct\+::device\+\_\+id}
 
-Integer device id\+: distingish between devices in the same scene Can be set by user. \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_aded4a3fb94bc5aec4844cc9643b6a020}\label{structmoetsi_1_1ssp_1_1FrameStruct_aded4a3fb94bc5aec4844cc9643b6a020}} 
+Integer device id\+: distingish between devices in the same scene Can be set by user. \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_a7556ce8749c65cd5b22ea9c7a4c17619}\label{structmoetsi_1_1ssp_1_1FrameStruct_a7556ce8749c65cd5b22ea9c7a4c17619}} 
 \index{moetsi\+::ssp\+::\+Frame\+Struct@{moetsi\+::ssp\+::\+Frame\+Struct}!frame@{frame}}
 \index{frame@{frame}!moetsi\+::ssp\+::\+Frame\+Struct@{moetsi\+::ssp\+::\+Frame\+Struct}}
 \subsubsection{\texorpdfstring{frame}{frame}}
-{\footnotesize\ttfamily std\+::vector$<$unsigned char$>$ moetsi\+::ssp\+::\+Frame\+Struct\+::frame}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned char $>$ moetsi\+::ssp\+::\+Frame\+Struct\+::frame}
 
 Frame binary data We use a vector to know the size, basically a vector of bytes to store binary data \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_a281ef582bcbb8b6b3d0f0eb3efd615c6}\label{structmoetsi_1_1ssp_1_1FrameStruct_a281ef582bcbb8b6b3d0f0eb3efd615c6}} 
 \index{moetsi\+::ssp\+::\+Frame\+Struct@{moetsi\+::ssp\+::\+Frame\+Struct}!frame\+\_\+data\+\_\+type@{frame\+\_\+data\+\_\+type}}
@@ -119,14 +122,14 @@ Sensor id \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_a14a7976abfb26a9
 \subsubsection{\texorpdfstring{stream\+\_\+id}{stream\_id}}
 {\footnotesize\ttfamily std\+::string moetsi\+::ssp\+::\+Frame\+Struct\+::stream\+\_\+id}
 
-Random 16 char string that uniquely ids the frame stream. Some decoders (like video) are stateful and so must keep track of streams. This is automatically generated. \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_a8509ad9c47a69d44dc572e5500973fda}\label{structmoetsi_1_1ssp_1_1FrameStruct_a8509ad9c47a69d44dc572e5500973fda}} 
+Random 16 char string that uniquely ids the frame stream. Some decoders (like video) are stateful and so must keep track of streams. This is automatically generated. \mbox{\Hypertarget{structmoetsi_1_1ssp_1_1FrameStruct_aa445729218d4963e527377d760ac8015}\label{structmoetsi_1_1ssp_1_1FrameStruct_aa445729218d4963e527377d760ac8015}} 
 \index{moetsi\+::ssp\+::\+Frame\+Struct@{moetsi\+::ssp\+::\+Frame\+Struct}!timestamps@{timestamps}}
 \index{timestamps@{timestamps}!moetsi\+::ssp\+::\+Frame\+Struct@{moetsi\+::ssp\+::\+Frame\+Struct}}
 \subsubsection{\texorpdfstring{timestamps}{timestamps}}
-{\footnotesize\ttfamily std\+::vector$<$uint64\+\_\+t$>$ moetsi\+::ssp\+::\+Frame\+Struct\+::timestamps}
+{\footnotesize\ttfamily std\+::vector$<$ uint64\+\_\+t $>$ moetsi\+::ssp\+::\+Frame\+Struct\+::timestamps}
 
 Use for logging and timing to understand processing speeds. Times are in ns 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{frame__struct_8h}{frame\+\_\+struct.\+h}\end{DoxyCompactItemize}
+include/structs/frame\+\_\+struct.\+h\end{DoxyCompactItemize}

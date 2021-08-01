@@ -1,11 +1,9 @@
 var searchData=
 [
   ['idecoder',['IDecoder',['../classmoetsi_1_1ssp_1_1IDecoder.html',1,'moetsi::ssp']]],
-  ['idecoder_2eh',['idecoder.h',['../idecoder_8h.html',1,'']]],
   ['idecoderfactory',['IDecoderFactory',['../namespacemoetsi_1_1ssp.html#a9478a722eaeec487c7288ed18c9a06bc',1,'moetsi::ssp']]],
   ['iencoder',['IEncoder',['../classmoetsi_1_1ssp_1_1IEncoder.html',1,'moetsi::ssp']]],
   ['iencoder_2ecc',['iencoder.cc',['../iencoder_8cc.html',1,'']]],
-  ['iencoder_2eh',['iencoder.h',['../iencoder_8h.html',1,'']]],
   ['iencoderfactory',['IEncoderFactory',['../namespacemoetsi_1_1ssp.html#a7e5e01bac9a0fade08d2b71d1c16bcbe',1,'moetsi::ssp']]],
   ['image_5fconverter_2ecc',['image_converter.cc',['../image__converter_8cc.html',1,'']]],
   ['image_5fconverter_2eh',['image_converter.h',['../image__converter_8h.html',1,'']]],
@@ -21,6 +19,5 @@ var searchData=
   ['iphonereaderimpl',['iPhoneReaderImpl',['../classmoetsi_1_1ssp_1_1iPhoneReaderImpl.html',1,'moetsi::ssp']]],
   ['ireader',['IReader',['../classmoetsi_1_1ssp_1_1IReader.html',1,'moetsi::ssp']]],
   ['ireader_2ecc',['ireader.cc',['../ireader_8cc.html',1,'']]],
-  ['ireader_2eh',['ireader.h',['../ireader_8h.html',1,'']]],
   ['ireaderfactory',['IReaderFactory',['../namespacemoetsi_1_1ssp.html#ad5e820c4c6a1a43d5e85608a06b86ea8',1,'moetsi::ssp']]]
 ];

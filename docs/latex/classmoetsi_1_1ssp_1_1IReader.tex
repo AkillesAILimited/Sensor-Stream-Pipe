@@ -34,6 +34,24 @@ virtual void \hyperlink{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd
 virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}{Get\+Current\+Frame\+Id} ()=0
 \item 
 virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}{Get\+Fps} ()=0
+\item 
+virtual \hyperlink{classmoetsi_1_1ssp_1_1IReader_ae1332862a7d81d99563f111ae36e142f}{$\sim$\+I\+Reader} ()
+\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct} $>$ $>$ \hyperlink{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}{Get\+Current\+Frame} ()=0
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ \hyperlink{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdca1cce}{Get\+Type} ()=0
+\item 
+virtual bool \hyperlink{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}{Has\+Next\+Frame} ()=0
+\item 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}{Next\+Frame} ()=0
+\item 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}{Reset} ()=0
+\item 
+virtual void \hyperlink{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd9566681}{Go\+To\+Frame} (unsigned int frame\+\_\+id)=0
+\item 
+virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}{Get\+Current\+Frame\+Id} ()=0
+\item 
+virtual unsigned int \hyperlink{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}{Get\+Fps} ()=0
 \end{DoxyCompactItemize}
 
 
@@ -44,7 +62,13 @@ S\+SP reader interface -\/ abstract class. Question\+: B\+L\+O\+C\+K\+I\+NG oper
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ae1332862a7d81d99563f111ae36e142f}\label{classmoetsi_1_1ssp_1_1IReader_ae1332862a7d81d99563f111ae36e142f}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!````~I\+Reader@{$\sim$\+I\+Reader}}
 \index{````~I\+Reader@{$\sim$\+I\+Reader}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{$\sim$\+I\+Reader()}{~IReader()}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Reader()}{~IReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual moetsi\+::ssp\+::\+I\+Reader\+::$\sim$\+I\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ae1332862a7d81d99563f111ae36e142f}\label{classmoetsi_1_1ssp_1_1IReader_ae1332862a7d81d99563f111ae36e142f}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!````~I\+Reader@{$\sim$\+I\+Reader}}
+\index{````~I\+Reader@{$\sim$\+I\+Reader}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Reader()}{~IReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual moetsi\+::ssp\+::\+I\+Reader\+::$\sim$\+I\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Destructor 
@@ -53,7 +77,17 @@ Destructor
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}\label{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Current\+Frame@{Get\+Current\+Frame}}
 \index{Get\+Current\+Frame@{Get\+Current\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Current\+Frame()}{GetCurrentFrame()}}
+\subsubsection{\texorpdfstring{Get\+Current\+Frame()}{GetCurrentFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct}$>$ $>$ moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get current frame data 
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a7f0d8f5d643ebeff0589eeb8af5b9a9e}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_a1c4adbf0de8d00d52b36fade1f30baa4}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_aacdb29f83bf5e38231ef26d89338c3b1}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a6a0aceb3412f25580876a4fbcedf7ed0}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_ad3b35cece8ba5b53edb110b5c1aa80bc}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}\label{classmoetsi_1_1ssp_1_1IReader_a357439182128e3911d77335c136035c0}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Current\+Frame@{Get\+Current\+Frame}}
+\index{Get\+Current\+Frame@{Get\+Current\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Current\+Frame()}{GetCurrentFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{structmoetsi_1_1ssp_1_1FrameStruct}{Frame\+Struct}$>$ $>$ moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Get current frame data 
@@ -63,7 +97,20 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a7f0d8f5d643ebeff05
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}\label{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}}
 \index{Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Current\+Frame\+Id()}{GetCurrentFrameId()}}
+\subsubsection{\texorpdfstring{Get\+Current\+Frame\+Id()}{GetCurrentFrameId()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual unsigned int moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Current\+Frame\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get current frame number \begin{DoxyReturn}{Returns}
+current frame number. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_aa17e268723c41bdad5082575decb28eb}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_aef5c92da2645cddc7e4ffcfd34ad4b8a}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a386125736df9f25e5c4312bb679ff031}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a994eea20e9682c2f4afc9303a34c76f3}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a78792c6319743aed3ef2afc96fe16485}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}\label{classmoetsi_1_1ssp_1_1IReader_ac292d83eb06dee277baaa06e281a562d}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}}
+\index{Get\+Current\+Frame\+Id@{Get\+Current\+Frame\+Id}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Current\+Frame\+Id()}{GetCurrentFrameId()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual unsigned int moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Current\+Frame\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Get current frame number \begin{DoxyReturn}{Returns}
@@ -76,7 +123,20 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_aa17e268723c41bdad5
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}\label{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Fps@{Get\+Fps}}
 \index{Get\+Fps@{Get\+Fps}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
+\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual unsigned int moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get indicative F\+PS in frame per second. \begin{DoxyReturn}{Returns}
+the F\+PS number 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_ac88c13693ce8e2e249438ac8de8a7b3c}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_a83359ad82898acdb75240568b182247c}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a86adfec8106c366aaf1ec63e2a7da156}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_ad0a249af66f8e1a063c3e575fc1b94cb}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a4bb216847a6c2ed8eb5d31788a0b8477}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}\label{classmoetsi_1_1ssp_1_1IReader_a9f6a8650ca290b011b8e5451eeae9f32}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Fps@{Get\+Fps}}
+\index{Get\+Fps@{Get\+Fps}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual unsigned int moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Get indicative F\+PS in frame per second. \begin{DoxyReturn}{Returns}
@@ -89,7 +149,20 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_ac88c13693ce8e2e249
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdca1cce}\label{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdca1cce}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Type@{Get\+Type}}
 \index{Get\+Type@{Get\+Type}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type}$>$ moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get frame types \begin{DoxyReturn}{Returns}
+a vector of Frame\+Type, listing available data types 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_aef896aa686cbe1ea82dfc6aad46b6ff7}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_a9d47af47299c5fccf766ac2d848a561b}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_af6f66957b6e3268c5336f4176c77fc73}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_ad5f6cf0cfb1e64bcf569ab0bbfcce9d6}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a05d285ace85fc570bc2f453a0862ae56}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdca1cce}\label{classmoetsi_1_1ssp_1_1IReader_a4116c1931fde7bd66133934ffdca1cce}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type}$>$ moetsi\+::ssp\+::\+I\+Reader\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Get frame types \begin{DoxyReturn}{Returns}
@@ -102,7 +175,22 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_aef896aa686cbe1ea82
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd9566681}\label{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd9566681}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Go\+To\+Frame@{Go\+To\+Frame}}
 \index{Go\+To\+Frame@{Go\+To\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Go\+To\+Frame()}{GoToFrame()}}
+\subsubsection{\texorpdfstring{Go\+To\+Frame()}{GoToFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Go\+To\+Frame (\begin{DoxyParamCaption}\item[{unsigned int}]{frame\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Go to a given frame 
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+id} & target frame number \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a315690c46e153a35d4ded1189e93af08}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_ad98a532db8b1e2c3879df274b2efb082}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a32eb88cc612e6920f4910e0803b0ce3c}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a7c552a1ad469660ea0a88b9ca85138ad}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a27b6dea97e4c4db8e4e749cc9e30e7ca}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd9566681}\label{classmoetsi_1_1ssp_1_1IReader_a6f1be3c06538992cca6d550bd9566681}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Go\+To\+Frame@{Go\+To\+Frame}}
+\index{Go\+To\+Frame@{Go\+To\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Go\+To\+Frame()}{GoToFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Go\+To\+Frame (\begin{DoxyParamCaption}\item[{unsigned int}]{frame\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Go to a given frame 
@@ -117,7 +205,20 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a315690c46e153a35d4
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}\label{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Has\+Next\+Frame@{Has\+Next\+Frame}}
 \index{Has\+Next\+Frame@{Has\+Next\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Has\+Next\+Frame()}{HasNextFrame()}}
+\subsubsection{\texorpdfstring{Has\+Next\+Frame()}{HasNextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool moetsi\+::ssp\+::\+I\+Reader\+::\+Has\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Check if there is a next frame \begin{DoxyReturn}{Returns}
+true if there is a next frame 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a08934b6eff437142e482bb21780ca171}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_ab5733b56b6d6dd7596eac9d914481c7e}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ad8e87720ca0ec97de501f1070119b28d}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a04240c98d28d8949fca4ecdcb04f04f5}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a35ca55a03a9fb7b559f9381b11f53bfe}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}\label{classmoetsi_1_1ssp_1_1IReader_af9186ba41e136dc4ec3242b5dd55fa04}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Has\+Next\+Frame@{Has\+Next\+Frame}}
+\index{Has\+Next\+Frame@{Has\+Next\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Has\+Next\+Frame()}{HasNextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool moetsi\+::ssp\+::\+I\+Reader\+::\+Has\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Check if there is a next frame \begin{DoxyReturn}{Returns}
@@ -130,7 +231,17 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a08934b6eff437142e4
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}\label{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Next\+Frame@{Next\+Frame}}
 \index{Next\+Frame@{Next\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Next\+Frame()}{NextFrame()}}
+\subsubsection{\texorpdfstring{Next\+Frame()}{NextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Go to next frame 
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a8495eb28b3893281c1d4bbd5ba9f9739}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_afdaf5606fd0cfcc2e1b5b7c0fb271ebf}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_a9b0a43f9a4fff4d0b8448e8ba168ad05}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a472e2b97ce7a1c2485abd14c276bb8fe}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_abba4479843de3e7ab42a3116b9fa94c9}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}\label{classmoetsi_1_1ssp_1_1IReader_a49e82a786cca55248e27e7fac8f97a17}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Next\+Frame@{Next\+Frame}}
+\index{Next\+Frame@{Next\+Frame}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Next\+Frame()}{NextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Go to next frame 
@@ -140,7 +251,17 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a8495eb28b3893281c1
 \mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}\label{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}} 
 \index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Reset@{Reset}}
 \index{Reset@{Reset}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
-\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reset this reader 
+
+Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a0ad8f7b57ef04554e41a66db797c000e}{moetsi\+::ssp\+::\+Kinect\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1VideoFileReader_ac646d10b57d4e3b3ff4d1c83a47e8c3d}{moetsi\+::ssp\+::\+Video\+File\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1ImageReader_ae9ffc89ceed365c96b8d50e46ee8dc20}{moetsi\+::ssp\+::\+Image\+Reader}, \hyperlink{classmoetsi_1_1ssp_1_1MultiImageReader_a3a60b57e1db97cb170435dd7f0d4c66d}{moetsi\+::ssp\+::\+Multi\+Image\+Reader}, and \hyperlink{classmoetsi_1_1ssp_1_1iPhoneReader_a3d78eacce7d71483da93efde29f47241}{moetsi\+::ssp\+::i\+Phone\+Reader}.
+
+\mbox{\Hypertarget{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}\label{classmoetsi_1_1ssp_1_1IReader_ad6e2ef78fc2466884aa877ecef54889d}} 
+\index{moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}!Reset@{Reset}}
+\index{Reset@{Reset}!moetsi\+::ssp\+::\+I\+Reader@{moetsi\+::ssp\+::\+I\+Reader}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void moetsi\+::ssp\+::\+I\+Reader\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Reset this reader 
@@ -151,4 +272,4 @@ Implemented in \hyperlink{classmoetsi_1_1ssp_1_1KinectReader_a0ad8f7b57ef04554e4
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{ireader_8h}{ireader.\+h}\end{DoxyCompactItemize}
+include/readers/ireader.\+h\end{DoxyCompactItemize}
