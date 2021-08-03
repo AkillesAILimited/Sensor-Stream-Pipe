@@ -422,9 +422,9 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed</b> 
 <tr class="memitem:ae44d43d11d27495335b5494d0cff7601"><td class="memItemLeft" align="right" valign="top">Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#ae44d43d11d27495335b5494d0cff7601">GetMSSIM</a> (const Mat &amp;i1, const Mat &amp;i2)</td></tr>
 <tr class="memdesc:ae44d43d11d27495335b5494d0cff7601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Structural Similarity between 2 images cf. for instance <a href="http://amroamroamro.github.io/mexopencv/opencv/image_similarity_demo.html">http://amroamroamro.github.io/mexopencv/opencv/image_similarity_demo.html</a> for a simple SSIM introduction.  <a href="#ae44d43d11d27495335b5494d0cff7601">More...</a><br /></td></tr>
 <tr class="separator:ae44d43d11d27495335b5494d0cff7601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6df4e4be7651adce19778f4efb5de0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a2e6df4e4be7651adce19778f4efb5de0">_CurrentTimeMs</a> ()</td></tr>
-<tr class="memdesc:a2e6df4e4be7651adce19778f4efb5de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current time in ms.  <a href="#a2e6df4e4be7651adce19778f4efb5de0">More...</a><br /></td></tr>
-<tr class="separator:a2e6df4e4be7651adce19778f4efb5de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aaefb86d19ad4cca7f0db6c37682195"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a3aaefb86d19ad4cca7f0db6c37682195">CurrentTimeMs</a> ()</td></tr>
+<tr class="memdesc:a3aaefb86d19ad4cca7f0db6c37682195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current time in ms.  <a href="#a3aaefb86d19ad4cca7f0db6c37682195">More...</a><br /></td></tr>
+<tr class="separator:a3aaefb86d19ad4cca7f0db6c37682195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7107897c233642c927f0129f2aea2e0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#ad7107897c233642c927f0129f2aea2e0">CurrentTimeUs</a> ()</td></tr>
 <tr class="memdesc:ad7107897c233642c927f0129f2aea2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current time in usec/microseconds.  <a href="#ad7107897c233642c927f0129f2aea2e0">More...</a><br /></td></tr>
 <tr class="separator:ad7107897c233642c927f0129f2aea2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1021,26 +1021,6 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>exiting</
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2e6df4e4be7651adce19778f4efb5de0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e6df4e4be7651adce19778f4efb5de0">&#9670;&nbsp;</a></span>_CurrentTimeMs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t moetsi::ssp::_CurrentTimeMs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current time in ms. </p>
-<dl class="section return"><dt>Returns</dt><dd>ms since UTC epoch </dd></dl>
-
-</div>
-</div>
 <a id="a028ac1fd9c21f63f40dfa1131c589ad5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a028ac1fd9c21f63f40dfa1131c589ad5">&#9670;&nbsp;</a></span>AVFrameToMatGray()</h2>
 
@@ -1139,6 +1119,26 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>exiting</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Azure Kinect configuration </dd></dl>
+
+</div>
+</div>
+<a id="a3aaefb86d19ad4cca7f0db6c37682195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aaefb86d19ad4cca7f0db6c37682195">&#9670;&nbsp;</a></span>CurrentTimeMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t moetsi::ssp::CurrentTimeMs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current time in ms. </p>
+<dl class="section return"><dt>Returns</dt><dd>ms since UTC epoch </dd></dl>
 
 </div>
 </div>

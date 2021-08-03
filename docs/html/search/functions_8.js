@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['idecoderfactory',['IDecoderFactory',['../namespacemoetsi_1_1ssp.html#a9478a722eaeec487c7288ed18c9a06bc',1,'moetsi::ssp']]],
-  ['iencoderfactory',['IEncoderFactory',['../namespacemoetsi_1_1ssp.html#a7e5e01bac9a0fade08d2b71d1c16bcbe',1,'moetsi::ssp']]],
-  ['imagebuffertoavframe',['ImageBufferToAVFrame',['../classmoetsi_1_1ssp_1_1ImageDecoder.html#a7a4e299977711727385c4c4e127453d2',1,'moetsi::ssp::ImageDecoder']]],
-  ['imagedecoder',['ImageDecoder',['../classmoetsi_1_1ssp_1_1ImageDecoder.html#a9054b4b5f32b6bcc000392680ea4ca5c',1,'moetsi::ssp::ImageDecoder']]],
-  ['init',['Init',['../classmoetsi_1_1ssp_1_1LibAvDecoder.html#a631ce4158ab4f456a26951674f96a803',1,'moetsi::ssp::LibAvDecoder::Init()'],['../classmoetsi_1_1ssp_1_1NvDecoder.html#a004e8a1ed5618df951477c9bb955b6ec',1,'moetsi::ssp::NvDecoder::Init()'],['../classmoetsi_1_1ssp_1_1ZDepthDecoder.html#aad7fe4789b709fc3496a1837a8ff86e5',1,'moetsi::ssp::ZDepthDecoder::Init()']]],
-  ['ireaderfactory',['IReaderFactory',['../namespacemoetsi_1_1ssp.html#ad5e820c4c6a1a43d5e85608a06b86ea8',1,'moetsi::ssp']]]
+  ['libavdecoder',['LibAvDecoder',['../classmoetsi_1_1ssp_1_1LibAvDecoder.html#a68174e3bd10e03eaabee437826399b64',1,'moetsi::ssp::LibAvDecoder']]],
+  ['libavencoder',['LibAvEncoder',['../classmoetsi_1_1ssp_1_1LibAvEncoder.html#a92b5b4c1f7da0a5cbf30bbf4fe7c89d4',1,'moetsi::ssp::LibAvEncoder::LibAvEncoder(std::string codec_parameters_file, unsigned int fps)'],['../classmoetsi_1_1ssp_1_1LibAvEncoder.html#a2d5ec3b4a92f7b9378fd397624bd4ea4',1,'moetsi::ssp::LibAvEncoder::LibAvEncoder(YAML::Node &amp;_codec_parameters, unsigned int fps)']]]
 ];

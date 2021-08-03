@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -Rvf docs/*
 doxygen doxyfile
 cd docs/latex
 make 
