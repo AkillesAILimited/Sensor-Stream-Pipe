@@ -21,7 +21,7 @@ namespace moetsi::ssp {
  * @brief Get current time in ms.
  * \return ms since UTC epoch
  */
-uint64_t _CurrentTimeMs();
+uint64_t CurrentTimeMs();
 
 /**
  * @brief Get current time in usec/microseconds.

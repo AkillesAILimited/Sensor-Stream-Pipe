@@ -13,7 +13,7 @@ namespace {
   thread_local std::mt19937_64 rng(std::chrono::steady_clock::now().time_since_epoch().count());
 }
 
-uint64_t _CurrentTimeMs() {
+uint64_t CurrentTimeMs() {
   using namespace std::chrono;
   return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
 }
