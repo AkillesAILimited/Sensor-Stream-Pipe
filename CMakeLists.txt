@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.11...3.19)
 project(ssp)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Set default build type to Release if none is defined

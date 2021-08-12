@@ -48,7 +48,7 @@ void ZDepthEncoder::AddFrameStruct(std::shared_ptr<FrameStruct> &fs) {
     frame_compressed_->stream_id = stream_id_;
     frame_compressed_->scene_desc = fs->scene_desc;
     frame_compressed_->timestamps.clear();
-    frame_compressed_->timestamps = std::vector<unsigned long>();
+    frame_compressed_->timestamps = std::vector<uint64_t>();
     frame_compressed_->timestamps.push_back(frame_original_->timestamps.front());
     frame_compressed_->timestamps.push_back(CurrentTimeNs());
     frame_compressed_->camera_calibration_data = fs->camera_calibration_data;
