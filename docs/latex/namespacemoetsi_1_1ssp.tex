@@ -131,7 +131,9 @@ enum \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87ad039a5ecd3504edc955b88006db4ba21}{Frame\+Type\+::\+Frame\+Type\+Color} = 0, 
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94577d85ef8e142036e047064}{Frame\+Type\+::\+Frame\+Type\+Depth} = 1, 
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f7416882b538fa8295567f65cf5}{Frame\+Type\+::\+Frame\+Type\+IR} = 2, 
-\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}{Frame\+Type\+::\+Frame\+Type\+Confidence} = 3
+\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}{Frame\+Type\+::\+Frame\+Type\+Confidence} = 3, 
+\newline
+\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}{Frame\+Type\+::\+Frame\+Type\+Human\+Pose} = 4
  \}\begin{DoxyCompactList}\small\item\em Frame type\+: color, depth, IR as well as confidence matrices. \end{DoxyCompactList}
 \item 
 enum \hyperlink{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563}{Codec\+Params\+Type} \+: short \{ \newline
@@ -220,7 +222,9 @@ enum \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87ad039a5ecd3504edc955b88006db4ba21}{Frame\+Type\+::\+Frame\+Type\+Color} = 0, 
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94577d85ef8e142036e047064}{Frame\+Type\+::\+Frame\+Type\+Depth} = 1, 
 \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f7416882b538fa8295567f65cf5}{Frame\+Type\+::\+Frame\+Type\+IR} = 2, 
-\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}{Frame\+Type\+::\+Frame\+Type\+Confidence} = 3
+\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}{Frame\+Type\+::\+Frame\+Type\+Confidence} = 3, 
+\newline
+\hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}{Frame\+Type\+::\+Frame\+Type\+Human\+Pose} = 4
  \}\begin{DoxyCompactList}\small\item\em Frame type\+: color, depth, IR as well as confidence matrices. \end{DoxyCompactList}
 \item 
 enum \hyperlink{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563}{Codec\+Params\+Type} \+: short \{ \newline
@@ -683,6 +687,10 @@ Frame\+Type\+IR&IR sensor frame type \\
 Frame\+Type\+Confidence&Confidence levels \\
 \hline
 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Frame\+Type\+Human\+Pose@{Frame\+Type\+Human\+Pose}!moetsi\+::ssp@{moetsi\+::ssp}}\index{moetsi\+::ssp@{moetsi\+::ssp}!Frame\+Type\+Human\+Pose@{Frame\+Type\+Human\+Pose}}}\mbox{\Hypertarget{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}\label{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}} 
+Frame\+Type\+Human\+Pose&Human pose \\
+\hline
+
 \end{DoxyEnumFields}
 \mbox{\Hypertarget{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}\label{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}} 
 \index{moetsi\+::ssp@{moetsi\+::ssp}!Frame\+Type@{Frame\+Type}}
@@ -725,6 +733,10 @@ Frame\+Type\+IR&IR sensor frame type \\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Frame\+Type\+Confidence@{Frame\+Type\+Confidence}!moetsi\+::ssp@{moetsi\+::ssp}}\index{moetsi\+::ssp@{moetsi\+::ssp}!Frame\+Type\+Confidence@{Frame\+Type\+Confidence}}}\mbox{\Hypertarget{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}\label{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60b857778932e29e0e5021ba1}} 
 Frame\+Type\+Confidence&Confidence levels \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Frame\+Type\+Human\+Pose@{Frame\+Type\+Human\+Pose}!moetsi\+::ssp@{moetsi\+::ssp}}\index{moetsi\+::ssp@{moetsi\+::ssp}!Frame\+Type\+Human\+Pose@{Frame\+Type\+Human\+Pose}}}\mbox{\Hypertarget{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}\label{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8fd8d1f8a6ba0cc75f2302018}} 
+Frame\+Type\+Human\+Pose&Human pose \\
 \hline
 
 \end{DoxyEnumFields}

@@ -38,7 +38,9 @@ enum class FrameType: short {
     /** IR sensor frame type */
     FrameTypeIR = 2, // N.B. ilumination IR or thermic IR?
     /** Confidence levels */
-    FrameTypeConfidence = 3
+    FrameTypeConfidence = 3,
+    /** Human pose */
+    FrameTypeHumanPose = 4
 };
 
 /**
