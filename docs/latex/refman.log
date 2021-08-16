@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  14 AUG 2021 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  17 AUG 2021 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1876,31 +1876,31 @@ nect[][] = 0, [][]Camera[]Calibration[]Type[]::[]Camera[]Calibration[]
  []
 
 [22]
-Underfull \hbox (badness 3354) in paragraph at lines 155--175
+Underfull \hbox (badness 3354) in paragraph at lines 156--176
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Image[]Frame[][] =
  0, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Libav[]Packets[][] = 1,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 155--175
+Underfull \hbox (badness 4454) in paragraph at lines 156--176
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Nv[]Pipe[]Packet[]
 [] = 4, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Raw32[]F[]C1[][] = 5,
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 155--175
+Underfull \hbox (badness 3354) in paragraph at lines 156--176
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Image[]Frame[][] =
  0, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Libav[]Packets[][] = 1,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 155--175
+Underfull \hbox (badness 4454) in paragraph at lines 156--176
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Nv[]Pipe[]Packet[]
 [] = 4, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Raw32[]F[]C1[][] = 5,
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 199--210
+Underfull \hbox (badness 5374) in paragraph at lines 200--211
 [][]\T1/phv/m/n/10 V[]I[]D[]E[]O[]_[][]R[]E[]A[]D[]E[]R[]_[][]K4[]A[]_[][]C[]O[
 ]L[]O[]R[]_[][]R[]E[]S[]O[]L[]U[]T[]I[]O[]N[]_[]1536P[][], [][]V[]I[]D[]E[]O[]_
 [][]R[]E[]A[]D[]E[]R[]_[][]K4[]A[]_[][]C[]O[]L[]O[]R[]_[][]R[]E[]S[]O[]L[]U[]T[
@@ -1908,74 +1908,74 @@ Underfull \hbox (badness 5374) in paragraph at lines 199--210
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 210--214
+Underfull \hbox (badness 2205) in paragraph at lines 211--215
 []\T1/phv/m/n/10 enum [][]Camera[]Calibration[]Type[][] []: short { [][]Camera[
 ]Calibration[]Type[]::[]Camera[]Calibration[]Type[]Default[][] = -1,
  []
 
 
-Underfull \hbox (badness 836) in paragraph at lines 210--214
+Underfull \hbox (badness 836) in paragraph at lines 211--215
 [][]\T1/phv/m/n/10 Camera[]Calibration[]Type[]::[]Camera[]Calibration[]Type[]Ki
 nect[][] = 0, [][]Camera[]Calibration[]Type[]::[]Camera[]Calibration[]
  []
 
 [23]
-Underfull \hbox (badness 3354) in paragraph at lines 246--266
+Underfull \hbox (badness 3354) in paragraph at lines 248--268
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Image[]Frame[][] =
  0, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Libav[]Packets[][] = 1,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 246--266
+Underfull \hbox (badness 4454) in paragraph at lines 248--268
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Nv[]Pipe[]Packet[]
 [] = 4, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Raw32[]F[]C1[][] = 5,
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 246--266
+Underfull \hbox (badness 3354) in paragraph at lines 248--268
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Image[]Frame[][] =
  0, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Libav[]Packets[][] = 1,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 246--266
+Underfull \hbox (badness 4454) in paragraph at lines 248--268
 [][]\T1/phv/m/n/10 Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Nv[]Pipe[]Packet[]
 [] = 4, [][]Frame[]Data[]Type[]::[]Frame[]Data[]Type[]Raw32[]F[]C1[][] = 5,
  []
 
 [24]
-Underfull \hbox (badness 4060) in paragraph at lines 308--308
+Underfull \hbox (badness 4060) in paragraph at lines 310--310
 []\T1/phv/m/sl/9 Get Struc-tural Sim-i-lar-ity be-tween 2 im-ages cf. for in-st
 ance [][]\T1/pcr/m/n/9 http[]://amroamroamro.[]github.[]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 327.
+(Font)              scaled to size 7.19995pt on input line 329.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 354.
+(Font)              scaled to size 7.19995pt on input line 356.
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 354.
+(Font)              using `T1/pcr/m/n' instead on input line 356.
 
 [25]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.1 on input line 378.
+(longtable)                in table 7.1 on input line 380.
 
 pdfTeX warning (ext4): destination with the same identifier (name{namespacemoet
 si_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.379 ..._1ssp_a1f51291db51233dc5865d42e6ee36ef8}}
+l.381 ..._1ssp_a1f51291db51233dc5865d42e6ee36ef8}}
                                                   
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.2 on input line 406.
+(longtable)                in table 7.2 on input line 408.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.3 on input line 450.
+(longtable)                in table 7.3 on input line 452.
 
 [26pdfTeX warning (ext4): destination with the same identifier (name{namespacem
 oetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8ac32f0bb1b309\ETC.}) has been alr
@@ -1983,85 +1983,85 @@ eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8a662285f55
 328\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8ac32f0bb1b
 309\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8a662285f55
 328\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8ac32f0bb1b
 309\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a1f51291db51233dc5865d42e6ee36ef8a662285f55
 328\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a1ffd3a6c0
 664\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a55e78e5ce
 82b\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563ac818f912b
 0dd\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a4e738f8ec
 62e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 \end{DoxyEnumFields}
+l.496 \end{DoxyEnumFields}
                           ] [27]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.4 on input line 494.
+(longtable)                in table 7.4 on input line 496.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.5 on input line 570.
+(longtable)                in table 7.5 on input line 572.
 
 [28pdfTeX warning (ext4): destination with the same identifier (name{namespacem
 oetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a1ffd3a6c0664\ETC.}) has been alr
@@ -2069,127 +2069,127 @@ eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a55e78e5ce
 82b\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563ac818f912b
 0dd\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a4e738f8ec
 62e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a1ffd3a6c0
 664\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a55e78e5ce
 82b\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563ac818f912b
 0dd\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a6d638ba0bd38e9daded08f633d893563a4e738f8ec
 62e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6f466822a
 5d2\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a234b11a09
 d69\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4ac2cdf8554
 455\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a44d909233
 498\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a1628ff137
 22a\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4abb6735708
 adc\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6191c61c7
 0f4\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4acd5fc2d48
 d13\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.646 \end{DoxyEnumFields}
+l.648 \end{DoxyEnumFields}
                           ]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.6 on input line 646.
+(longtable)                in table 7.6 on input line 648.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.7 on input line 694.
+(longtable)                in table 7.7 on input line 700.
 
 [29pdfTeX warning (ext4): destination with the same identifier (name{namespacem
 oetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6f466822a5d2\ETC.}) has been alr
@@ -2197,162 +2197,169 @@ eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a234b11a09
 d69\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4ac2cdf8554
 455\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a44d909233
 498\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a1628ff137
 22a\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4abb6735708
 adc\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6191c61c7
 0f4\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4acd5fc2d48
 d13\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6f466822a
 5d2\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a234b11a09
 d69\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4ac2cdf8554
 455\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a44d909233
 498\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a1628ff137
 22a\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4abb6735708
 adc\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4a6191c61c7
 0f4\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_aa9b059f0bc7a91855545ee887f2d56c4acd5fc2d48
 d13\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87ad039a5ecd
 350\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94
 577\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f741
 688\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60
 b85\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8f
+d8d\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.752 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 \end{DoxyEnumFields}
+l.752 \end{DoxyEnumFields}
                           ]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.8 on input line 742.
+(longtable)                in table 7.8 on input line 752.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.9 on input line 786.
+(longtable)                in table 7.9 on input line 796.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.10 on input line 830.
+(longtable)                in table 7.10 on input line 840.
 
 
-Overfull \vbox (23.28993pt too high) has occurred while \output is active []
+Overfull \vbox (37.68726pt too high) has occurred while \output is active []
 
 
 [30pdfTeX warning (ext4): destination with the same identifier (name{namespacem
@@ -2361,166 +2368,173 @@ eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94
 577\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f741
 688\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60
 b85\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87ad039a5ecd
-350\ETC.}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.830 \end{DoxyEnumFields}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94
-577\ETC.}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.830 \end{DoxyEnumFields}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f741
-688\ETC.}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.830 \end{DoxyEnumFields}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60
-b85\ETC.}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8f
 d8d\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87ad039a5ecd
+350\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.840 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a59cea6d94
+577\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.840 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a2c799f741
+688\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.840 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87a1b85b2c60
+b85\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.840 \end{DoxyEnumFields}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87aa4b26dd8f
+d8d\ETC.}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea896d4c904
 dda\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea38c56a323
 40e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea06604c7f5
 6c3\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea8fc6ffe53
 07d\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474de}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea896d4c904
 dda\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea38c56a323
 40e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea06604c7f5
 6c3\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea8fc6ffe53
 07d\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea896d4c904
 dda\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea38c56a323
 40e\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea06604c7f5
 6c3\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474dea8fc6ffe53
 07d\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.830 \end{DoxyEnumFields}
+l.840 \end{DoxyEnumFields}
                           ]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.11 on input line 850.
+(longtable)                in table 7.11 on input line 860.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.12 on input line 870.
+(longtable)                in table 7.12 on input line 880.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.13 on input line 906.
+(longtable)                in table 7.13 on input line 916.
 
 [31pdfTeX warning (ext4): destination with the same identifier (name{namespacem
 oetsi_1_1ssp_a8948545ffe48a5b3507fd10a1e56d546a16d065ca1ae1\ETC.}) has been alr
@@ -2528,90 +2542,90 @@ eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.938 \end{DoxyEnumFields}
+l.948 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a8948545ffe48a5b3507fd10a1e56d546}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.938 \end{DoxyEnumFields}
+l.948 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a8948545ffe48a5b3507fd10a1e56d546a16d065ca1
 ae1\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.938 \end{DoxyEnumFields}
+l.948 \end{DoxyEnumFields}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{namespacemoetsi_1_1ssp_a8948545ffe48a5b3507fd10a1e56d546a16d065ca1
 ae1\ETC.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.938 \end{DoxyEnumFields}
+l.948 \end{DoxyEnumFields}
                           ]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.14 on input line 938.
+(longtable)                in table 7.14 on input line 948.
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 946.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 956.
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.15 on input line 958.
+(longtable)                in table 7.15 on input line 968.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.16 on input line 975.
+(longtable)                in table 7.16 on input line 985.
 
 [32]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.17 on input line 990.
+(longtable)                in table 7.17 on input line 1000.
 
 
-Underfull \hbox (badness 10000) detected at line 991
+Underfull \hbox (badness 10000) detected at line 1001
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1004
+Underfull \hbox (badness 10000) detected at line 1014
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1017
+Underfull \hbox (badness 10000) detected at line 1027
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1030
+Underfull \hbox (badness 10000) detected at line 1040
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1037.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1047.
 [33]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.18 on input line 1051.
+(longtable)                in table 7.18 on input line 1061.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.19 on input line 1070.
+(longtable)                in table 7.19 on input line 1080.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.20 on input line 1087.
+(longtable)                in table 7.20 on input line 1097.
 
 
-Underfull \hbox (badness 10000) detected at line 1088
+Underfull \hbox (badness 10000) detected at line 1098
 [][][]
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 1099--1100
+Underfull \hbox (badness 2903) in paragraph at lines 1109--1110
 []\T1/phv/m/n/10 Get Struc-tural Sim-i-lar-ity be-tween 2 im-ages cf. for in-st
 ance [][]\T1/pcr/m/n/10 http[]://amroamroamro.[]github.[]
  []
@@ -2619,66 +2633,66 @@ ance [][]\T1/pcr/m/n/10 http[]://amroamroamro.[]github.[]
 [34]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.21 on input line 1107.
+(longtable)                in table 7.21 on input line 1117.
 
 
-Underfull \hbox (badness 10000) detected at line 1108
+Underfull \hbox (badness 10000) detected at line 1118
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.22 on input line 1125.
+(longtable)                in table 7.22 on input line 1135.
 
 
-Underfull \hbox (badness 10000) detected at line 1126
+Underfull \hbox (badness 10000) detected at line 1136
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.23 on input line 1147.
+(longtable)                in table 7.23 on input line 1157.
 
 [35]
-Underfull \hbox (badness 10000) detected at line 1148
+Underfull \hbox (badness 10000) detected at line 1158
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.24 on input line 1165.
+(longtable)                in table 7.24 on input line 1175.
 
 
-Underfull \hbox (badness 10000) detected at line 1166
+Underfull \hbox (badness 10000) detected at line 1176
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.25 on input line 1183.
+(longtable)                in table 7.25 on input line 1193.
 
 
-Underfull \hbox (badness 10000) detected at line 1184
+Underfull \hbox (badness 10000) detected at line 1194
 [][][]
  []
 
 [36]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.26 on input line 1201.
+(longtable)                in table 7.26 on input line 1211.
 
 
-Underfull \hbox (badness 10000) detected at line 1202
+Underfull \hbox (badness 10000) detected at line 1212
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.27 on input line 1227.
+(longtable)                in table 7.27 on input line 1237.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.28 on input line 1242.
+(longtable)                in table 7.28 on input line 1252.
 
 ) [37] [38
 
@@ -4440,7 +4454,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
 Here is how much of TeX's memory you used:
  17696 strings out of 494880
  327992 string characters out of 6179600
- 408021 words of memory out of 5000000
+ 408971 words of memory out of 5000000
  19014 multiletter control sequences out of 15000+600000
  69430 words of font info for 89 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -4466,7 +4480,7 @@ share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (150 pages, 834854 bytes).
+Output written on refman.pdf (150 pages, 835081 bytes).
 PDF statistics:
  4072 PDF objects out of 4296 (max. 8388607)
  3645 compressed objects within 37 object streams
