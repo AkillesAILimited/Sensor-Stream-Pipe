@@ -91,7 +91,7 @@ iPhoneReader::iPhoneReader()
   
   frame_template_.message_type = SSPMessageType::MessageTypeDefault; // 0
   
-  frame_template_.frame_data_type = FrameDataType::FrameDataTypeImageType; // 0
+  frame_template_.frame_data_type = FrameDataType:: FrameDataTypeImageFrame; // 0
   frame_template_.scene_desc = "iphone";
   frame_template_.stream_id = RandomString(16);
   
@@ -111,8 +111,8 @@ iPhoneReader::iPhoneReader()
   
   pImpl->confidence = std::shared_ptr<FrameStruct>(new FrameStruct(frame_template_));
   pImpl->confidence->sensor_id = 2;
-  pImpl->confidence->frame_type = FrameType::FRameTypeConfidence;   // 3 confidence
-  pImpl->confidence->frame_data_type = FrameDataTypeU8C1; // 7 U8C1
+  pImpl->confidence->frame_type = FrameType::FrameTypeConfidence;   // 3 confidence
+  pImpl->confidence->frame_data_type =  FrameDataType::FrameDataTypeU8C1; // 7 U8C1
   pImpl->confidence->timestamps.push_back(CurrentTimeNs());
   pImpl->confidence->timestamps.push_back(CurrentTimeNs());
 
@@ -303,7 +303,7 @@ unsigned int iPhoneReader::GetFps()
 vector<FrameType> iPhoneReader::GetType()
 {
   vector<FrameType> res;
-  res.push_back(0);
+  res.push_back(FrameType::FrameTypeColor);
   
   if (@available(iOS 14.0, *))
   {
