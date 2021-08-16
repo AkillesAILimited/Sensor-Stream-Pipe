@@ -24,6 +24,13 @@ void NetworkReader::init() {
       zmq::event_flags::pollin);
 
 #endif
+
+  //context = zmq_ctx_new();
+  //responder = zmq_socket(context, ZMQ_PULL);
+  //auto bind_str = "tcp://*:" + std::to_string(port_);               
+  //auto rc = zmq_bind(responder, bind_str.c_str());
+  //std::cerr << "rc = " << rc << std::endl << std::flush;
+
   socket_->bind("tcp://*:" + std::to_string(port_));
 }
 
@@ -51,9 +58,21 @@ unsigned long elapsed(unsigned long start, unsigned long end)
 }
 
 void NetworkReader::NextFrame() {
-  zmq::message_t request;
 
+std::cerr << __FILE__ << ":" << __LINE__<< std::endl << std::flush;
+  zmq::message_t request;
   socket_->recv(&request);
+
+  //uint32_t l32 = 0;
+  //auto rc = zmq_recv(responder, &l32, 4, 0);
+  //std::cerr << "l32 = " << l32 << std::endl;
+  //std::cerr << __FILE__ << ":" << __LINE__<< std::endl << std::flush;
+  //int sockopt = 0;
+  //size_t sockopt_len = sizeof(int);
+  //auto rcso = zmq_getsockopt(responder, ZMQ_RCVMORE, &sockopt, &sockopt_len);
+  //std::vector<char> buffer_;
+  //buffer_.resize(l32);
+  //auto rc2 = zmq_recv(responder, &buffer_[0], buffer_.size(), 0);
 
   if (rec_frames_ == 0) {
     last_time_ = CurrentTimeNs();
@@ -74,10 +93,14 @@ void NetworkReader::NextFrame() {
   std::string result =
       std::string(static_cast<char *>(request.data()), request.size());
 
+  //std::string result =
+  //    std::string(static_cast<char *>(&buffer_[0]), buffer_.size());
+
   std::vector<FrameStruct> f_list =
       ParseCerealStructFromString<std::vector<FrameStruct>>(result);
 
   rec_mbytes_ += request.size() / 1000;
+  // rec_mbytes_ += buffer_.size() / 1000;
 
   for (unsigned int i = 0; i < f_list.size(); i++) {
     f_list.at(i).timestamps.push_back(CurrentTimeNs());
@@ -89,7 +112,10 @@ void NetworkReader::NextFrame() {
   spdlog::debug(
       "Message received, took {} ns; packet size {}; avg {} fps; {:3.2f} avg "
       "Mbps; latency: {} ns",
-      diff_time, request.size(), avg_fps,
+      diff_time, 
+      request.size(), 
+    //  buffer_.size(),
+      avg_fps,
       8 * (1000000ULL * rec_mbytes_ / (CurrentTimeNs() - start_time_)),
       elapsed(f_list.front().timestamps.back(), f_list.front().timestamps.at(1)));
   for (FrameStruct f : f_list) {

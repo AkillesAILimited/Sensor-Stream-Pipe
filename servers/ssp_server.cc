@@ -57,6 +57,10 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
     zmq::context_t context(1);
     zmq::socket_t socket(context, ZMQ_PUSH);
 
+    //void *context = nullptr;
+    //void *requester = nullptr;
+    //context = zmq_ctx_new();
+    //requester = zmq_socket(context, ZMQ_PUSH);
     // Do not accumulate packets if no client is connected
     socket.set(zmq::sockopt::immediate, true);
 
@@ -165,6 +169,8 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
                       encoder_type);
         return 1;
       }
+
+      // std::cerr << encoder_type << " " << unsigned(type) << " " << (!!fe) << std::endl << std::flush;
       encoders[unsigned(type)] = fe;
     }
 
@@ -178,9 +184,11 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
 
     double sent_latency = 0;
 
-    socket.connect("tcp://" + host + ":" + std::to_string(port));
+   socket.connect("tcp://" + host + ":" + std::to_string(port));
+   // auto cstr =  "tcp://" + host + ":" + std::to_string(port);
+   // auto rcc = zmq_connect(requester, cstr.c_str());
 
-    unsigned int fps = reader->GetFps();
+    unsigned int fps = reader->GetFps();    
     unsigned int frame_time = 1000000000ULL/fps;
 
     while (1) {
@@ -188,7 +196,7 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
       if (processing_time < frame_time)
       {
         uint64_t sleep_time = frame_time - processing_time;
-        std::this_thread::sleep_for(std::chrono::milliseconds(sleep_time));
+        std::this_thread::sleep_for(std::chrono::nanoseconds(sleep_time));
       }
 
       start_frame_time = CurrentTimeNs();
@@ -206,16 +214,21 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
             reader->GetCurrentFrame();
         for (std::shared_ptr<FrameStruct> frameStruct : frameStruct) {
 
+
           std::shared_ptr<IEncoder> frameEncoder =
               encoders[unsigned(frameStruct->frame_type)];
-
-          frameEncoder->AddFrameStruct(frameStruct);
-          if (frameEncoder->HasNextPacket()) {
-            std::shared_ptr<FrameStruct> f =
-                frameEncoder->CurrentFrameEncoded();
-            vO.push_back(f);
-            v.push_back(*f);
-            frameEncoder->NextPacket();
+              // std::cerr << "ft = " << unsigned(frameStruct->frame_type) << std::endl << std::endl;
+          if (!!frameEncoder) {
+            frameEncoder->AddFrameStruct(frameStruct);
+            if (frameEncoder->HasNextPacket()) {
+              std::shared_ptr<FrameStruct> f =
+                  frameEncoder->CurrentFrameEncoded();
+              vO.push_back(f);
+              v.push_back(*f);
+              frameEncoder->NextPacket();
+            }
+          } else {
+            // std::cerr << "skip!" << std::endl << std::flush;
           }
         }
         if (reader->HasNextFrame())
@@ -226,11 +239,20 @@ extern "C" SSP_EXPORT int ssp_server(const char* filename)
       }
 
       if (!v.empty()) {
+
+       
         std::string message = CerealStructToString(v);
 
         zmq::message_t request(message.size());
         memcpy(request.data(), message.c_str(), message.size());
         socket.send(request, zmq::send_flags::none);
+        //auto *buffer = &message[0];
+        //auto length = message.size();
+        //uint32_t l32 = length;
+        //std::cerr << "l32 = " << l32 << std::endl;
+        //auto rc0 = zmq_send(requester, &l32, 4, ZMQ_SNDMORE); 
+        //auto rc = zmq_send(requester, buffer, length, 0);
+
         sent_frames += 1;
         sent_kbytes += message.size() / 1000.0;
 

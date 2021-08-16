@@ -28,6 +28,9 @@ private:
   std::unordered_map<std::string, double> rec_mbytes_per_stream_;
   std::vector<FrameStruct> current_frame_internal_;
 
+  // void *context = nullptr;
+  // void *responder = nullptr;
+
   int port_;
   std::unique_ptr<zmq::context_t> context_;
   std::unique_ptr<zmq::socket_t> socket_;

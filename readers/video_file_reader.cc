@@ -336,7 +336,7 @@ std::vector<FrameType> VideoFileReader::GetType() {
   if (!libav_ready_)
     Init(this->filename_);
   std::vector<FrameType> ft;
-  for (auto &t :ft) ft.push_back(FrameType(t));
+  for (auto &t : video_stream_indexes_) ft.push_back(FrameType(t));
   return ft;
 }
 ushort VideoFileReader::GetKinectColorResolution(std::string &metadata_value) {

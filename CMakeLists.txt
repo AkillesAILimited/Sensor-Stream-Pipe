@@ -14,6 +14,11 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
 endif()
 
+option(LOCAL_DEP_BUILD_LINUX "Build deps locally on linux with some options" OFF)
+if (LOCAL_DEP_BUILD_LINUX)
+# add script here?
+endif()
+
 # Download dependencies
 include(FetchContent)
 
@@ -36,11 +41,19 @@ elseif (WIN32)
     URL_HASH MD5=c228bcad89609f7fdec0b7b8f65d10bb
   )
 elseif (UNIX)
-  FetchContent_Declare(
-    ssp_dep
-    URL https://moetsiblob.blob.core.windows.net/binaries-ssp/202104061701__ssp_lindep.tar.gz
-    URL_HASH MD5=4e6d2610a90874ec14a103eb57820626
-  )
+  if (LOCAL_DEP_BUILD_LINUX)
+    message(STATUS "please make sure you have gone to 3rdpary and run build_lin_dep.sh")
+    FetchContent_Declare(
+      ssp_dep
+      SOURCE_DIR ${CMAKE_SOURCE_DIR}/3rdparty/tmp/local.ssp
+    )
+  else ()
+    FetchContent_Declare(
+      ssp_dep
+      URL https://moetsiblob.blob.core.windows.net/binaries-ssp/202104061701__ssp_lindep.tar.gz
+      URL_HASH MD5=4e6d2610a90874ec14a103eb57820626
+    )
+  endif()
 endif()
 
 FetchContent_GetProperties(ssp_dep)
@@ -67,12 +80,30 @@ if (ssp_dep_POPULATED)
   set(cppzmq_DIR ${ssp_dep_SOURCE_DIR}/cppzmq/share/cmake/cppzmq CACHE PATH "cppzmq installation path")
   set(FFMPEG_ROOT ${ssp_dep_SOURCE_DIR}/ffmpeg CACHE PATH "ffmpeg installation path")
   set(zdepth_DIR ${ssp_dep_SOURCE_DIR}/zdepth/lib/cmake/zdepth CACHE PATH "Zdepth installation path")
+  if (LOCAL_DEP_BUILD_LINUX)
+  message(STATUS " searching for openh264 in " ${ssp_dep_SOURCE_DIR}/openh264/)
+    set(openh264_INCLUDE_DIR ${ssp_dep_SOURCE_DIR}/openh264/include)
+    set(openh264_DIR ${ssp_dep_SOURCE_DIR}/openh264)
+    set(openh264_LIBRARY ${ssp_dep_SOURCE_DIR}/openh264/lib/libopenh264.so.6) # yes this is linux for now
+  endif()
 endif()
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 # Parallel build with VisualStudio
 add_compile_options($<$<CXX_COMPILER_ID:MSVC>:/MP>)
+
+option(ASAN "Build with ASAN" OFF)
+if (ASAN)
+  add_compile_options("-fsanitize=address")
+  add_link_options("-fsanitize=address")
+endif(ASAN)
+
+option(TSAN "Build with TSAN" OFF)
+if (TSAN)
+  add_compile_options("-fsanitize=thread")
+  add_link_options("-fsanitize=thread")
+endif(TSAN)
 
 find_package(Threads REQUIRED)
 find_package(cereal REQUIRED)
@@ -81,6 +112,10 @@ find_package(yaml-cpp REQUIRED)
 find_package(ZeroMQ REQUIRED)
 find_package(cppzmq REQUIRED)
 find_package(zdepth REQUIRED)
+
+if (LOCAL_DEP_BUILD_LINUX)
+  find_package(openh264 REQUIRED)
+endif()
 
 if (IOS)
   add_definitions(-DFFMPEG_AS_FRAMEWORK)
@@ -243,6 +278,11 @@ target_link_libraries(ssp PUBLIC
     zdepth::zdepth
 )
 
+if (openh264_FOUND)
+    message(STATUS "adding openh264 to link libraries")
+    target_link_libraries(ssp PUBLIC openh264::openh264)
+endif()
+
 if (IOS)
     target_sources(ssp PRIVATE readers/iphone_reader.mm readers/iphone_reader.h)
     target_link_libraries(ssp PRIVATE "-framework ARKit")
@@ -333,3 +373,11 @@ if (SSP_WITH_K4A_BODYTRACK)
 
     target_sources(ssp_plugin PRIVATE clients/ssp_client_k4a.cc)
 endif ()
+
+if (LOCAL_DEP_BUILD_LINUX)
+  message(STATUS "in order to be able to run the server, some Linux machines require to export an LD_LIBRARY_PATH"
+          " that points to libswresample.so.3 and libopenh264.so.6"
+          " ex: export LD_LIBRARY_PATH=$ProjectDir/3rdparty/tmp/local.ssp/ffmpeg/lib:$ProjectDir/3rdparty/tmp/local.ssp/openh264/lib; ./ssp_server serve_video.yaml "
+          " ... "
+  )
+endif()

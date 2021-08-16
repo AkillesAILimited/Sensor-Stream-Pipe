@@ -262,6 +262,9 @@ void LibAvEncoder::Init(std::shared_ptr<FrameStruct> &fs) {
   av_codec_ =
       std::unique_ptr<AVCodec, AVCodecDeleter>(avcodec_find_encoder_by_name(
           codec_parameters_["codec_name"].as<std::string>().c_str()));
+
+  // std::cerr << "codec name " <<  codec_parameters_["codec_name"].as<std::string>().c_str() << " " << (!!av_codec_) << std::endl;
+
   av_codec_context_ = std::unique_ptr<AVCodecContext, AVCodecContextDeleter>(
       avcodec_alloc_context3(av_codec_.get()));
   av_codec_parameters_ =
