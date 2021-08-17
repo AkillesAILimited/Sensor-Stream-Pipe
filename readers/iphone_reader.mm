@@ -1,11 +1,11 @@
 /**
  * \file iphone_reader.mm @brief iPhone driver
  */
+//
 // Created by David Geldreich on 1-06-2021.
+//
 
 #include "iphone_reader.h"
-
-using namespace moetsi::ssp;
 
 #include <opencv2/imgproc.hpp>
 
@@ -25,12 +25,28 @@ using namespace std;
   @public CVPixelBufferRef _depthBuffer;
   @public CVPixelBufferRef _confidenceBuffer;
   @public unsigned long _timestamp;
+  @private id<ARSessionDelegate> _hookedDelegate;
 }
 @end
 
+static ARSession* gSession = nil;
+
+struct UnityXRNativeSessionPtr
+{
+ int version;
+ void* session;
+};
+
+extern "C" void use_session(void* session)
+{
+    auto data = static_cast<UnityXRNativeSessionPtr*>(session);
+    if (data != nil)
+        gSession = (__bridge ARSession*)(data->session);
+}
+
 @implementation SessionDelegate
 
-- (instancetype)init
+- (instancetype)init:(ARSession*)session
 {
     self = [super init];
     if (self)
@@ -41,6 +57,9 @@ using namespace std;
       _depthBuffer = nil;
       _confidenceBuffer = nil;
       _timestamp = 0;
+      _hookedDelegate = nil;
+      if (session)
+        _hookedDelegate = session.delegate;
     }
     
     return self;
@@ -48,6 +67,10 @@ using namespace std;
 
 - (void)session:(ARSession *)session didUpdateFrame:(ARFrame *)frame
 {
+  // Pass info to hooked delegate if any
+  if (_hookedDelegate)
+    [_hookedDelegate session:session didUpdateFrame:frame];
+    
   pthread_mutex_lock(&_mutex);
   CVPixelBufferRelease(_pixelBuffer);
   _pixelBuffer = CVPixelBufferRetain(frame.capturedImage);
@@ -118,49 +141,56 @@ iPhoneReader::iPhoneReader()
 
   @autoreleasepool
   {
-    pImpl->session = [ARSession new];
-
-    // Need WorldTracking to get reconstruction of depth buffer from LiDAR
-    // but disable unused features to lower power usage
-    ARWorldTrackingConfiguration* configuration = [ARWorldTrackingConfiguration new];
-    if (@available(iOS 13.0, *))
+    ARWorldTrackingConfiguration* configuration = nil;
+    if (gSession == nil)
     {
-      configuration.collaborationEnabled = NO;
-      configuration.userFaceTrackingEnabled = NO;
-      configuration.wantsHDREnvironmentTextures = NO;
-    }
-    if (@available(iOS 13.4, *))
-      configuration.sceneReconstruction = ARSceneReconstructionNone;
-    if (@available(iOS 14.3, *))
-      configuration.appClipCodeTrackingEnabled = NO;
-    if (@available(iOS 12.0, *))
-    {
-      configuration.environmentTexturing = AREnvironmentTexturingNone;
-      configuration.maximumNumberOfTrackedImages = 0;
-    }
-    configuration.planeDetection = ARPlaneDetectionNone;
-    configuration.lightEstimationEnabled = NO;
-    configuration.providesAudioData = NO;
+        pImpl->session = [ARSession new];
 
-    pImpl->delegate = [[SessionDelegate alloc] init];
+        // Need WorldTracking to get reconstruction of depth buffer from LiDAR
+        // but disable unused features to lower power usage
+        configuration = [ARWorldTrackingConfiguration new];
+        if (@available(iOS 13.0, *))
+        {
+          configuration.collaborationEnabled = NO;
+          configuration.userFaceTrackingEnabled = NO;
+          configuration.wantsHDREnvironmentTextures = NO;
+        }
+        if (@available(iOS 13.4, *))
+          configuration.sceneReconstruction = ARSceneReconstructionNone;
+        if (@available(iOS 14.3, *))
+          configuration.appClipCodeTrackingEnabled = NO;
+        if (@available(iOS 12.0, *))
+        {
+          configuration.environmentTexturing = AREnvironmentTexturingNone;
+          configuration.maximumNumberOfTrackedImages = 0;
+        }
+        configuration.planeDetection = ARPlaneDetectionNone;
+        configuration.lightEstimationEnabled = NO;
+        configuration.providesAudioData = NO;
+    } else
+        pImpl->session = gSession;
+
+    pImpl->delegate = [[SessionDelegate alloc] init:gSession];
     pImpl->session.delegate = pImpl->delegate;
 
     pImpl->fps = 60;
     
     if (@available(iOS 11.3, *))
-      pImpl->fps = (unsigned int)configuration.videoFormat.framesPerSecond;
+        pImpl->fps = (unsigned int)configuration.videoFormat.framesPerSecond;
     
     // Depth is only supported on iOS 14 and above
     if (@available(iOS 14.0, *))
     {
-      if ([ARWorldTrackingConfiguration supportsFrameSemantics:ARFrameSemanticSceneDepth])
+      if ([ARWorldTrackingConfiguration supportsFrameSemantics:ARFrameSemanticSceneDepth] && configuration)
       {
         configuration.frameSemantics = ARFrameSemanticSceneDepth;
         spdlog::debug("Adding SceneDepth to configuration");
       }
     }
-    
-    [pImpl->session runWithConfiguration:configuration];
+
+    // Do not start session if using Unity's ARSession
+    if (gSession == nil)
+        [pImpl->session runWithConfiguration:configuration];
   }
 }
 
@@ -310,7 +340,7 @@ vector<FrameType> iPhoneReader::GetType()
     if ([ARWorldTrackingConfiguration supportsFrameSemantics:ARFrameSemanticSceneDepth])
     {
       res.push_back(FrameType::FrameTypeDepth); // 1:Depth
-      res.push_back(FrameType::FrameTypeConfidence); // #:Confidence
+      res.push_back(FrameType::FrameTypeConfidence); // 3:Confidence
     }
   }
   return res;
