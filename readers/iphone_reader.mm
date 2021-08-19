@@ -16,7 +16,7 @@
 #include <mach/task.h>
 
 using namespace std;
-uisng namespace moetsi::ssp;
+using namespace moetsi::ssp;
 
 @interface SessionDelegate : NSObject<ARSessionDelegate>
 {
