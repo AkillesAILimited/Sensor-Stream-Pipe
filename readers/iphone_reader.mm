@@ -74,7 +74,7 @@ extern "C" void use_session(void* session)
   pthread_mutex_lock(&_mutex);
   CVPixelBufferRelease(_pixelBuffer);
   _pixelBuffer = CVPixelBufferRetain(frame.capturedImage);
-  _timestamp = CurrentTimeMs();
+  _timestamp = CurrentTimeNs();
     
   if (@available(iOS 14.0, *))
   {
@@ -244,7 +244,7 @@ vector<shared_ptr<FrameStruct>> iPhoneReader::GetCurrentFrame()
     s->frame.resize(len_y + len_uv + 2 * sizeof(int));
     
     s->timestamps[0] = pImpl->delegate->_timestamp;
-    s->timestamps[1] = CurrentTimeMs();
+    s->timestamps[1] = CurrentTimeNs();
 
     memcpy(&s->frame[0], &cols, sizeof(int));
     memcpy(&s->frame[4], &rows, sizeof(int));
@@ -273,7 +273,7 @@ vector<shared_ptr<FrameStruct>> iPhoneReader::GetCurrentFrame()
     s->frame.resize(size + 2 * sizeof(int));
 
     s->timestamps[0] = pImpl->delegate->_timestamp;
-    s->timestamps[1] = CurrentTimeMs();
+    s->timestamps[1] = CurrentTimeNs();
     
     memcpy(&s->frame[0], &cols, sizeof(int));
     memcpy(&s->frame[4], &rows, sizeof(int));
@@ -298,7 +298,7 @@ vector<shared_ptr<FrameStruct>> iPhoneReader::GetCurrentFrame()
     s->frame.resize(size + 2 * sizeof(int));
 
     s->timestamps[0] = pImpl->delegate->_timestamp;
-    s->timestamps[1] = CurrentTimeMs();
+    s->timestamps[1] = CurrentTimeNs();
     
     memcpy(&s->frame[0], &cols, sizeof(int));
     memcpy(&s->frame[4], &rows, sizeof(int));
