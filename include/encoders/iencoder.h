@@ -14,6 +14,7 @@
 #pragma once
 
 #include "../structs/frame_struct.h"
+#include <unordered_map>
 
 namespace moetsi::ssp {
 
@@ -71,8 +72,9 @@ public:
 /**
  * @brief IEncoder factory
  * \param config configuration
- * \return IEncoder instance
+ * \param types type to support
+ * \return IEncoder instances
  */
-std::shared_ptr<IEncoder> IEncoderFactory(const std::string & config);
+std::unordered_map<FrameType, std::shared_ptr<IEncoder>> IEncoderFactory(const std::string & config, const std::vector<FrameType> &types);
 
 }

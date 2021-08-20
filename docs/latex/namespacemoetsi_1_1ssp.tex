@@ -284,7 +284,7 @@ enum \hyperlink{namespacemoetsi_1_1ssp_abd5a57e44ab71b73d2e32a59887474de}{Sensor
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{classmoetsi_1_1ssp_1_1IDecoder}{I\+Decoder} $>$ \hyperlink{namespacemoetsi_1_1ssp_a9478a722eaeec487c7288ed18c9a06bc}{I\+Decoder\+Factory} (const std\+::string \&config)
 \begin{DoxyCompactList}\small\item\em \hyperlink{classmoetsi_1_1ssp_1_1IDecoder}{I\+Decoder} factory. \end{DoxyCompactList}\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} $>$ \hyperlink{namespacemoetsi_1_1ssp_a7e5e01bac9a0fade08d2b71d1c16bcbe}{I\+Encoder\+Factory} (const std\+::string \&config)
+std\+::unordered\+\_\+map$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type}, std\+::shared\+\_\+ptr$<$ \hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} $>$ $>$ \hyperlink{namespacemoetsi_1_1ssp_ad7a44286de625366acc78a320113e09b}{I\+Encoder\+Factory} (const std\+::string \&config, const std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ \&types)
 \begin{DoxyCompactList}\small\item\em \hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} factory. \end{DoxyCompactList}\item 
 void \hyperlink{namespacemoetsi_1_1ssp_a0af356ab87e92f92c49e7118b9cb1ba2}{Setup\+Logging} (std\+::string \&level, std\+::string \&file)
 \begin{DoxyCompactList}\small\item\em Setup logging. \end{DoxyCompactList}\item 
@@ -1176,11 +1176,11 @@ P\+S\+NR image similarity
 \begin{DoxyReturn}{Returns}
 \hyperlink{classmoetsi_1_1ssp_1_1IDecoder}{I\+Decoder} instance 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemoetsi_1_1ssp_a7e5e01bac9a0fade08d2b71d1c16bcbe}\label{namespacemoetsi_1_1ssp_a7e5e01bac9a0fade08d2b71d1c16bcbe}} 
+\mbox{\Hypertarget{namespacemoetsi_1_1ssp_ad7a44286de625366acc78a320113e09b}\label{namespacemoetsi_1_1ssp_ad7a44286de625366acc78a320113e09b}} 
 \index{moetsi\+::ssp@{moetsi\+::ssp}!I\+Encoder\+Factory@{I\+Encoder\+Factory}}
 \index{I\+Encoder\+Factory@{I\+Encoder\+Factory}!moetsi\+::ssp@{moetsi\+::ssp}}
 \subsubsection{\texorpdfstring{I\+Encoder\+Factory()}{IEncoderFactory()}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} $>$ moetsi\+::ssp\+::\+I\+Encoder\+Factory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{config }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type}, std\+::shared\+\_\+ptr$<$ \hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} $>$ $>$ moetsi\+::ssp\+::\+I\+Encoder\+Factory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{config,  }\item[{const std\+::vector$<$ \hyperlink{namespacemoetsi_1_1ssp_a46efdfa2cd5a28ead465dcc8006b5a87}{Frame\+Type} $>$ \&}]{types }\end{DoxyParamCaption})}
 
 
 
@@ -1190,9 +1190,11 @@ P\+S\+NR image similarity
 \begin{DoxyParams}{Parameters}
 {\em config} & configuration \\
 \hline
+{\em types} & type to support \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} instance 
+\hyperlink{classmoetsi_1_1ssp_1_1IEncoder}{I\+Encoder} instances 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacemoetsi_1_1ssp_ad5e820c4c6a1a43d5e85608a06b86ea8}\label{namespacemoetsi_1_1ssp_ad5e820c4c6a1a43d5e85608a06b86ea8}} 
 \index{moetsi\+::ssp@{moetsi\+::ssp}!I\+Reader\+Factory@{I\+Reader\+Factory}}

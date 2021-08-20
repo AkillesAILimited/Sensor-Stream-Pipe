@@ -395,9 +395,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9478a722eaeec487c7288ed18c9a06bc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmoetsi_1_1ssp_1_1IDecoder.html">IDecoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a9478a722eaeec487c7288ed18c9a06bc">IDecoderFactory</a> (const std::string &amp;config)</td></tr>
 <tr class="memdesc:a9478a722eaeec487c7288ed18c9a06bc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classmoetsi_1_1ssp_1_1IDecoder.html" title="IDecoder abstract decoder interface. ">IDecoder</a> factory.  <a href="#a9478a722eaeec487c7288ed18c9a06bc">More...</a><br /></td></tr>
 <tr class="separator:a9478a722eaeec487c7288ed18c9a06bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5e01bac9a0fade08d2b71d1c16bcbe"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html">IEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a7e5e01bac9a0fade08d2b71d1c16bcbe">IEncoderFactory</a> (const std::string &amp;config)</td></tr>
-<tr class="memdesc:a7e5e01bac9a0fade08d2b71d1c16bcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> factory.  <a href="#a7e5e01bac9a0fade08d2b71d1c16bcbe">More...</a><br /></td></tr>
-<tr class="separator:a7e5e01bac9a0fade08d2b71d1c16bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a44286de625366acc78a320113e09b"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="namespacemoetsi_1_1ssp.html#a46efdfa2cd5a28ead465dcc8006b5a87">FrameType</a>, std::shared_ptr&lt; <a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html">IEncoder</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#ad7a44286de625366acc78a320113e09b">IEncoderFactory</a> (const std::string &amp;config, const std::vector&lt; <a class="el" href="namespacemoetsi_1_1ssp.html#a46efdfa2cd5a28ead465dcc8006b5a87">FrameType</a> &gt; &amp;types)</td></tr>
+<tr class="memdesc:ad7a44286de625366acc78a320113e09b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> factory.  <a href="#ad7a44286de625366acc78a320113e09b">More...</a><br /></td></tr>
+<tr class="separator:ad7a44286de625366acc78a320113e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af356ab87e92f92c49e7118b9cb1ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoetsi_1_1ssp.html#a0af356ab87e92f92c49e7118b9cb1ba2">SetupLogging</a> (std::string &amp;level, std::string &amp;file)</td></tr>
 <tr class="memdesc:a0af356ab87e92f92c49e7118b9cb1ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup logging.  <a href="#a0af356ab87e92f92c49e7118b9cb1ba2">More...</a><br /></td></tr>
 <tr class="separator:a0af356ab87e92f92c49e7118b9cb1ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1459,18 +1459,28 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>exiting</
 
 </div>
 </div>
-<a id="a7e5e01bac9a0fade08d2b71d1c16bcbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e5e01bac9a0fade08d2b71d1c16bcbe">&#9670;&nbsp;</a></span>IEncoderFactory()</h2>
+<a id="ad7a44286de625366acc78a320113e09b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a44286de625366acc78a320113e09b">&#9670;&nbsp;</a></span>IEncoderFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html">IEncoder</a> &gt; moetsi::ssp::IEncoderFactory </td>
+          <td class="memname">std::unordered_map&lt; <a class="el" href="namespacemoetsi_1_1ssp.html#a46efdfa2cd5a28ead465dcc8006b5a87">FrameType</a>, std::shared_ptr&lt; <a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html">IEncoder</a> &gt; &gt; moetsi::ssp::IEncoderFactory </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>config</em></td><td>)</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacemoetsi_1_1ssp.html#a46efdfa2cd5a28ead465dcc8006b5a87">FrameType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1479,10 +1489,11 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>exiting</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>configuration </td></tr>
+    <tr><td class="paramname">types</td><td>type to support </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmoetsi_1_1ssp_1_1IEncoder.html" title="IEncoder abstract encoder class. ">IEncoder</a> instances </dd></dl>
 
 </div>
 </div>
