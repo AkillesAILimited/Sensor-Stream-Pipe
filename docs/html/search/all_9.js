@@ -9,7 +9,6 @@ var searchData=
   ['iencoder_2eh',['iencoder.h',['../include_2encoders_2iencoder_8h.html',1,'']]],
   ['iencoderfactory',['IEncoderFactory',['../namespacemoetsi_1_1ssp.html#ad7a44286de625366acc78a320113e09b',1,'moetsi::ssp']]],
   ['image_5fconverter_2ecc',['image_converter.cc',['../image__converter_8cc.html',1,'']]],
-  ['image_5fconverter_2eh',['image_converter.h',['../image__converter_8h.html',1,'']]],
   ['image_5fdecoder_2ecc',['image_decoder.cc',['../image__decoder_8cc.html',1,'']]],
   ['image_5fdecoder_2eh',['image_decoder.h',['../image__decoder_8h.html',1,'']]],
   ['image_5freader_2ecc',['image_reader.cc',['../image__reader_8cc.html',1,'']]],

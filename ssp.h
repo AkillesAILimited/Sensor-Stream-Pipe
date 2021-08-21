@@ -6,6 +6,7 @@
 #include "encoders/iencoder.h"
 #include "decoders/idecoder.h"
 #include "readers/ireader.h"
+#include "utils/image_converter.h"
 
 /**
  * @brief Moetsi creations

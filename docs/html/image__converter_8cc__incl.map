@@ -1,5 +1,5 @@
 <map id="image_converter.cc" name="image_converter.cc">
-<area shape="rect" id="node2" href="$image__converter_8h.html" title="Image converter from frame struct to opencv. " alt="" coords="280,237,409,263"/>
+<area shape="rect" id="node2" href="$utils_2image__converter_8h_source.html" title="image_converter.h" alt="" coords="280,237,409,263"/>
 <area shape="rect" id="node22" href="$libav__decoder_8h.html" title="Jpeg/Mpeg decoder. " alt="" coords="1505,80,1688,107"/>
 <area shape="rect" id="node36" href="$zdepth__decoder_8h.html" title="ZDepth decoder. " alt="" coords="434,229,565,271"/>
 <area shape="rect" id="node3" href="$decoders_2idecoder_8h_source.html" title="../decoders/idecoder.h" alt="" coords="544,319,695,345"/>
