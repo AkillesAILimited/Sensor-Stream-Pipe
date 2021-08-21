@@ -48,7 +48,8 @@ namespace moetsi::ssp {
         #else
                     spdlog::error("SSP compiled without \"nvenc\" reader support. Set to "
                                 "SSP_WITH_NVPIPE_SUPPORT=ON when configuring with cmake");
-                    return encoders;
+                //    return encoders;
+                    continue;
         #endif
                 } else if (encoder_type == "zdepth")
                     fe = std::shared_ptr<ZDepthEncoder>(new ZDepthEncoder(v, v["fps"].as<int>()));
@@ -58,7 +59,8 @@ namespace moetsi::ssp {
                     spdlog::error("Unknown encoder type: \"{}\". Supported types are "
                                 "\"libav\", \"nvenc\", \"zdepth\" and \"null\"",
                                 encoder_type);
-                    return encoders;
+                //    return encoders;
+                    continue;
                 }
                 encoders[type] = fe;
             } catch(std::exception &e) {
