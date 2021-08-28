@@ -72,6 +72,7 @@ if (ssp_dep_POPULATED)
     set(yaml-cpp_DIR ${ssp_dep_SOURCE_DIR}/yaml-cpp/CMake CACHE PATH "yaml-cpp installation path")
     set(k4a_DIR ${ssp_dep_SOURCE_DIR}/k4a/lib/cmake/k4a CACHE PATH "k4a installation path")
   else()
+    message(STATUS "OpenCV could be at " ${ssp_dep_SOURCE_DIR}/opencv/share/OpenCV)
     set(OpenCV_DIR ${ssp_dep_SOURCE_DIR}/opencv/share/OpenCV CACHE PATH "OpenCV installation path")
     set(ZeroMQ_DIR ${ssp_dep_SOURCE_DIR}/libzmq/lib/cmake/ZeroMQ CACHE PATH "ZeroMQ installation path")
     set(yaml-cpp_DIR ${ssp_dep_SOURCE_DIR}/yaml-cpp/lib/cmake/yaml-cpp CACHE PATH "yaml-cpp installation path")
@@ -142,6 +143,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # TODO: modify FindFFmpeg to add this automatically
 include_directories(${FFMPEG_INCLUDE_DIRS})
+message(STATUS "OpenCV_DIR = " ${OpenCV_DIR})
 
 if (WIN32)
     file(COPY ${FFMPEG_INCLUDE_DIRS}/../bin/
@@ -267,6 +269,8 @@ endif ()
 
 add_library(ssp STATIC ${SOURCE_FILES})
 target_link_libraries(ssp PRIVATE ${FFMPEG_LIBRARIES})
+
+message(STATUS "open cv linked as " ${OpenCV_LIBS} " and includes: " ${OpenCV_INCLUDE_DIRS})
 
 target_link_libraries(ssp PUBLIC
     cereal
