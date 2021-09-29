@@ -24,7 +24,7 @@ function build_ffmpeg {
     export FFMPEG_NAME=ffmpeg-n4.3.2-160-gfbb9368226-win64-lgpl-shared-4.3
     curl -L -O \
       https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2021-03-12-12-32/${FFMPEG_NAME}.zip
-    unzip -d ${LOCAL_DIR} ${FFMPEG_NAME}.zip
+    unzip -d ${LOCAL_DIR} ${FFMPEG_NAME}.zip || exit -1
 
     mv ${LOCAL_DIR}/${FFMPEG_NAME} ${LOCAL_DIR}/ffmpeg
     return
@@ -54,7 +54,7 @@ function build_ffmpeg {
 function build_opencv {
     echo "Building opencv"
     git clone --depth 1 --branch 3.4.13 \
-        https://github.com/opencv/opencv.git
+        https://github.com/opencv/opencv.git || exit -1
     pushd opencv
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
@@ -96,9 +96,9 @@ function build_opencv {
         -DBUILD_TESTS=OFF \
         -DWITH_EIGEN=OFF -DWITH_FFMPEG=OFF \
         -DWITH_QUIRC=OFF \
-        ..
-    cmake --build . --config Release --target install
-    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
+    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install || exit -1
     cd ..
     popd
 }
@@ -106,14 +106,14 @@ function build_opencv {
 function build_cereal {
     echo "Building Cereal"
     git clone --depth 1 --branch v1.3.0 \
-        https://github.com/USCiLab/cereal.git
+        https://github.com/USCiLab/cereal.git || exit -1
     pushd cereal
     mkdir build && cd build
     cmake -G "Visual Studio 15 2017 Win64" \
         -DCMAKE_INSTALL_PREFIX=${LOCAL_DIR}/cereal \
         -DJUST_INSTALL_CEREAL=ON \
-        ..
-    cmake --build . --config Release --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
     cd ..
     popd
 }
@@ -122,16 +122,16 @@ function build_cereal {
 function build_spdlog {
     echo "Building spdlog"
     git clone --depth 1 --branch v1.8.2 \
-        https://github.com/gabime/spdlog.git
+        https://github.com/gabime/spdlog.git || exit -1
     pushd spdlog
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
         -G "Visual Studio 15 2017 Win64" \
         -DCMAKE_INSTALL_PREFIX=${LOCAL_DIR}/spdlog \
         -DSPDLOG_BUILD_SHARED=OFF \
-        ..
-    cmake --build . --config Release --target install
-    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
+    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install || exit -1
     cd ..
     popd
 }
@@ -139,20 +139,20 @@ function build_spdlog {
 # https://github.com/catid/Zdepth
 function build_zdepth {
     echo "Building zdepth"
-    git clone https://github.com/catid/Zdepth.git
+    git clone https://github.com/catid/Zdepth.git || exit -1
     pushd Zdepth
 
     # Commit including our cmake patch
-    git checkout 9b333d9aec520
+    git checkout 9b333d9aec520 || exit -1
 
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
         -G "Visual Studio 15 2017 Win64" \
         -DCMAKE_INSTALL_PREFIX=${LOCAL_DIR}/zdepth \
         -DCMAKE_DEBUG_POSTFIX=d \
-        ..
-    cmake --build . --config Release --target install
-    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
+    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install || exit -1
     cd ..
     popd
 }
@@ -161,7 +161,7 @@ function build_zdepth {
 function build_yaml_cpp {
     echo "Building yaml cpp"
     git clone --depth 1 --branch yaml-cpp-0.6.3 \
-        https://github.com/jbeder/yaml-cpp.git
+        https://github.com/jbeder/yaml-cpp.git || exit -1
     pushd yaml-cpp
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
@@ -172,9 +172,9 @@ function build_yaml_cpp {
         -DYAML_CPP_BUILD_TESTS=OFF \
         -DYAML_CPP_BUILD_TOOLS=OFF \
         -DYAML_CPP_INSTALL=ON \
-        ..
-    cmake --build . --config Release --target install
-    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
+    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install || exit -1
     cd ..
     popd
 }
@@ -183,7 +183,7 @@ function build_yaml_cpp {
 function build_libzmq {
     echo "Building libzmq"
     git clone --depth 1 --branch v4.3.4 \
-        https://github.com/zeromq/libzmq.git
+        https://github.com/zeromq/libzmq.git || exit -1
     pushd libzmq
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
@@ -193,9 +193,9 @@ function build_libzmq {
         -DBUILD_TESTS=OFF -DWITH_TLS=OFF \
         -DWITH_LIBSODIUM=OFF \
         -DWITH_LIBSODIUM_STATIC=OFF \
-        ..
-    cmake --build . --config Release --target install
-    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
+    [ ${BUILD_DEBUG} ]  && cmake --build . --config Debug --target install || exit -1
     cd ..
     popd
 }
@@ -204,7 +204,7 @@ function build_libzmq {
 function build_cppzmq {
     echo "Building cppzmq"
     git clone --depth 1 --branch v4.7.1 \
-        https://github.com/zeromq/cppzmq.git
+        https://github.com/zeromq/cppzmq.git || exit -1
     pushd cppzmq
     mkdir build && cd build
     CFLAGS="-MP" CXXFLAGS="-MP" cmake \
@@ -212,8 +212,8 @@ function build_cppzmq {
         -DCMAKE_INSTALL_PREFIX=${LOCAL_DIR}/cppzmq \
         -DZeroMQ_DIR=${LOCAL_DIR}/libzmq/CMake \
         -DCPPZMQ_BUILD_TESTS=OFF \
-        ..
-    cmake --build . --config Release --target install
+        .. || exit -1
+    cmake --build . --config Release --target install || exit -1
     cd ..
     popd
 }
@@ -261,14 +261,14 @@ mkdir -p ${LOCAL_DIR}
 [ ${BUILD_DEBUG} ] && echo "Build Release+Debug version" || echo "Build only Release version"
 
 #install_yasm
-build_ffmpeg
-build_opencv
-build_cereal
-build_spdlog
-build_zdepth
-build_yaml_cpp
-build_libzmq
-build_cppzmq
+build_ffmpeg || exit -1
+build_opencv || exit -1
+build_cereal || exit -1
+build_spdlog || exit -1
+build_zdepth || exit -1
+build_yaml_cpp || exit -1
+build_libzmq || exit -1
+build_cppzmq || exit -1
 build_k4a
 
 version=$(git describe --dirty | sed -e 's/^v//' -e 's/g//' -e 's/[[:space:]]//g')
